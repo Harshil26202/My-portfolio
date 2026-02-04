@@ -475,6 +475,28 @@
     }
   }, true);
 
+  //--------------------------------------------------------------
+  // Back to Top Button
+  //--------------------------------------------------------------
+  const backToTopBtn = select('#back-to-top');
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+  }
+
   // Mobile nav toggle
   const mobileNavToggle = select('.mobile-nav-toggle');
   const navbar = select('#navbar');
