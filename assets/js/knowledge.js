@@ -166,11 +166,6 @@ window.HK_KB = [
     answer: 'Three guardrails: evals before vibes (every system gets a baseline to beat), abstain when unsure (a confident wrong answer is worse than saying "I don\'t know"), and humans approve actions (anything with side effects sits behind an approval gate).'
   },
   {
-    id: 'rlhf', title: 'Experience · model evaluation & RLHF', href: '#experience',
-    keys: 'rlhf model evaluation evals frontier llm contract annotation benchmark tasks reinforcement learning human feedback',
-    answer: 'Alongside Argusoft, he does contract work in AI model evaluation and RLHF, writing expert-level evaluation tasks for frontier LLMs.'
-  },
-  {
     id: 'maruti', title: 'Experience · Maruti Techlabs', href: '#experience',
     keys: 'internship intern maruti techlabs ahmedabad domo tableau mssql fivetran dashboards',
     answer: 'In May–July 2022 he was a Data Engineering Intern at Maruti Techlabs in Ahmedabad, building automated DOMO and Tableau dashboards on FiveTran-backed MSSQL pipelines.'
