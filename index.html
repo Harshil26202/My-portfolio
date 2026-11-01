@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Harshil Kaneria | AI Engineer & Backend Developer</title>
-  <meta content="AI Engineer and Backend Developer with expertise in RAG pipelines, multi-agent systems, and LLM-driven solutions" name="description">
-  <meta content="AI Engineer, Backend Developer, LangChain, LangGraph, RAG, LLM, Python, Django" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harshil Kaneria · AI Engineer</title>
+  <meta name="description" content="Harshil Kaneria is an AI engineer who started in ML: 5+ years across graph-neural-network research at IIT Gandhinagar and production multi-agent systems, RAG and voice agents.">
+  <meta name="keywords" content="Harshil Kaneria, AI Engineer, Agentic AI, LangGraph, LangChain, RAG, GraphRAG, Multi-agent systems, LLM evals, FastAPI, Python">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="canonical" href="https://harshil26202.github.io/My-portfolio/">
 
-  <!-- Favicons -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harshil Kaneria · AI Engineer">
+  <meta property="og:description" content="I build agents that ship to production, and the evals that prove they work.">
+  <meta property="og:url" content="https://harshil26202.github.io/My-portfolio/">
+  <meta property="og:image" content="https://harshil26202.github.io/My-portfolio/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@HarshilKaneria4">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <link href="assets/img/favicon.png" type="image/png" rel="icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..500&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('hk-theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harshil Kaneria",
+    "jobTitle": "AI Engineer",
+    "worksFor": { "@type": "Organization", "name": "Argusoft India Ltd" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Rajkot", "addressRegion": "Gujarat", "addressCountry": "IN" },
+    "email": "mailto:harshilkaneriya26202@gmail.com",
+    "url": "https://harshil26202.github.io/My-portfolio/",
+    "sameAs": [
+      "https://github.com/Harshil26202",
+      "https://www.linkedin.com/in/harshil-kaneria-3a498918b/",
+      "https://twitter.com/HarshilKaneria4",
+      "https://leetcode.com/u/hkharshil10/"
+    ]
+  }
+  </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KX7FXVWPXW"></script>
@@ -37,1339 +79,937 @@
 </head>
 
 <body>
-  <!-- Particle Background Canvas -->
-  <canvas id="particle-canvas"></canvas>
-  <div id="circuit-pattern"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#leadership">Leadership</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#experience">Experience</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="glitch" data-text="Harshil Kaneria">
-            <span>Harshil Kaneria</span>
-          </h1>
-          <div class="typing-container">
-            <h2>I'm a <span class="typing-text"></span></h2>
-          </div>
-          <p class="hero-description">
-            Backend Developer and AI Engineer crafting intelligent systems with RAG pipelines, 
-            multi-agent workflows, and LLM-driven solutions.
-          </p>
-          <div class="hero-stats">
-            <div class="stats-grid">
-              <div class="stat-item">
-                <span class="stat-number" data-target="3">0</span>
-                <span class="stat-plus">+</span>
-                <span class="stat-label">Years Experience</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="900">0</span>
-                <span class="stat-label">LeetCode Problems</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="24">0</span>
-                <span class="stat-label">Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <a href="#contact" class="btn-secondary">Get In Touch</a>
-            <a href="https://drive.google.com/drive/folders/13eFBkf4dUJCc2UqfdoVkQ5FfCR2Wn5Eg?usp=sharing" target="_blank" class="btn-secondary">Download Resume</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-wrapper">
-            <div class="hero-image-glow"></div>
-            <div class="hero-image-container">
-              <img src="assets/img/hero-image.png" alt="Harshil Kaneria - AI Engineer" class="hero-image">
-              <div class="hero-image-overlay">
-                <div class="floating-particles">
-                  <div class="particle"></div>
-                  <div class="particle"></div>
-                  <div class="particle"></div>
-                  <div class="particle"></div>
-                  <div class="particle"></div>
-                </div>
-              </div>
-            </div>
-            <div class="neural-network-overlay">
-              <div class="node node-1"></div>
-              <div class="node node-2"></div>
-              <div class="node node-3"></div>
-              <svg class="connections">
-                <line class="connection" x1="20%" y1="30%" x2="50%" y2="50%"></line>
-                <line class="connection" x1="80%" y1="30%" x2="50%" y2="50%"></line>
-                <line class="connection" x1="50%" y1="50%" x2="30%" y2="70%"></line>
-                <line class="connection" x1="50%" y1="50%" x2="70%" y2="70%"></line>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="social-links">
-        <a href="https://github.com/Harshil26202" class="github" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://twitter.com/HarshilKaneria4" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://leetcode.com/u/hkharshil10/" class="leetcode" aria-label="LeetCode" target="_blank"><i class="bi bi-braces"></i></a>
-      </div>
-
+  <!-- Intro loader (shown only with JS, capped at ~2s) -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-row">
+      <span class="loader-name">Harshil Kaneria</span>
+      <span class="loader-count"><span id="loader-count">0</span>%</span>
     </div>
+    <span class="loader-bar"><i id="loader-bar"></i></span>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor-ring"><span class="cursor-label"></span></span><span class="cursor-dot"></span></div>
+
+  <!-- ======= Navigation ======= -->
+  <header class="nav" id="nav">
+    <a class="nav-brand" href="#top" aria-label="Harshil Kaneria, back to top">
+      <span class="brand-mark" aria-hidden="true">hk</span>
+      <span class="brand-text">Harshil Kaneria</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-ask" type="button" data-open-twin aria-label="Ask my AI twin (Command K)">
+        <span class="nav-ask-dot" aria-hidden="true"></span>
+        <span>Ask AI</span>
+        <kbd class="kbd-hint">⌘K</kbd>
+      </button>
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle light and dark theme">
+        <i class="bi bi-sun" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn nav-menu" type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span class="burger" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+    <span class="nav-progress" aria-hidden="true"><i id="nav-progress"></i></span>
   </header>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">01</span>
-        <h2>About Me</h2>
-        <p>Transforming ideas into intelligent systems</p>
-      </div>
+  <nav class="rail" id="rail" aria-label="Sections">
+    <ol>
+      <li><a href="#top" aria-label="00 Intro"><span class="rail-tip" aria-hidden="true"><b>00</b>Intro</span></a></li>
+      <li><a href="#about" aria-label="01 About"><span class="rail-tip" aria-hidden="true"><b>01</b>About</span></a></li>
+      <li><a href="#principles" aria-label="02 How I build"><span class="rail-tip" aria-hidden="true"><b>02</b>How I build</span></a></li>
+      <li><a href="#work" aria-label="03 Work"><span class="rail-tip" aria-hidden="true"><b>03</b>Work</span></a></li>
+      <li><a href="#research" aria-label="04 Research"><span class="rail-tip" aria-hidden="true"><b>04</b>Research</span></a></li>
+      <li><a href="#skills" aria-label="05 Skills"><span class="rail-tip" aria-hidden="true"><b>05</b>Skills</span></a></li>
+      <li><a href="#experience" aria-label="06 Experience"><span class="rail-tip" aria-hidden="true"><b>06</b>Experience</span></a></li>
+      <li><a href="#recognition" aria-label="07 Recognition"><span class="rail-tip" aria-hidden="true"><b>07</b>Recognition</span></a></li>
+      <li><a href="#leadership" aria-label="08 Leadership"><span class="rail-tip" aria-hidden="true"><b>08</b>Leadership</span></a></li>
+      <li><a href="#contact" aria-label="09 Contact"><span class="rail-tip" aria-hidden="true"><b>09</b>Contact</span></a></li>
+    </ol>
+    <p class="rail-count" aria-hidden="true"><b id="rail-cur">00</b> / 09</p>
+  </nav>
 
-      <div class="row about-content">
-        <div class="col-lg-12 about-text">
-          <h3>AI Engineer & Backend Developer</h3>
-          <p class="fst-italic">
-            Backend Developer and AI Engineer with 3+ years of experience designing scalable backend architectures 
-            and deploying agentic, LLM-driven systems in production. Expertise in RAG pipelines, multi-agent workflows, 
-            real-time data extraction, and conversational AI, leveraging LangChain, LangGraph, and vector databases.
-          </p>
-          <div class="info-grid">
-            <div class="info-item">
-              <i class="bi bi-calendar3"></i>
-              <div>
-                <strong>Birthday</strong>
-                <span>26 Feb 2002</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-geo-alt"></i>
-              <div>
-                <strong>Location</strong>
-                <span>Rajkot, Gujarat, India</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-envelope"></i>
-              <div>
-                <strong>Email</strong>
-                <span>harshilkaneriya26202@gmail.com</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="bi bi-briefcase"></i>
-              <div>
-                <strong>Status</strong>
-                <span>Available for Opportunities</span>
-              </div>
-            </div>
-          </div>
-
-          <h4 class="mt-4">Education</h4>
-          <div class="education-timeline">
-            <div class="edu-item">
-              <div class="edu-icon">
-                <i class="bi bi-mortarboard"></i>
-              </div>
-              <div class="edu-content">
-                <h5>B.E. Computer Engineering</h5>
-                <p>Government Engineering College, Rajkot</p>
-                <span class="edu-date">July 2019 - May 2023 | CGPA: 9.26</span>
-              </div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="edu-content">
-                <h5>Student Externship Program</h5>
-                <p>IIT Gandhinagar</p>
-                <span class="edu-date">Jan 2022 - May 2022 | CGPA: 7.43</span>
-                <p class="edu-note">Selected from 20,000+ applicants</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Highlights Section -->
-      <div class="highlights-section">
-        <h4 class="section-subtitle">Highlights</h4>
-        <div class="achievements-grid">
-        <div class="achievement-card" data-aos="fade-up">
-          <div class="achievement-icon">
-            <i class="bi bi-trophy-fill"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>1664</h3>
-            <p>LeetCode Rating</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="50">
-          <div class="achievement-icon">
-            <i class="bi bi-star-fill"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>1810</h3>
-            <p>CodeChef Rating (4⭐)</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="achievement-icon">
-            <i class="bi bi-award-fill"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>99</h3>
-            <p>Intl. Rank - CodeChef Long</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="achievement-icon">
-            <i class="bi bi-graph-up-arrow"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>468</h3>
-            <p>GATE Score (AIR: 3933)</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="achievement-icon">
-            <i class="bi bi-trophy"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>1st</h3>
-            <p>Google HashCode Regional</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="achievement-icon">
-            <img src="https://www.sih.gov.in/img/sih-logo.png" alt="SIH" class="achievement-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <i class="bi bi-trophy-fill" style="display:none;"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>2nd</h3>
-            <p>Smart India Hackathon</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="achievement-icon">
-            <img src="https://iitgn.ac.in/img/iitgn-logo.png" alt="IITGN" class="achievement-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <i class="bi bi-trophy-fill" style="display:none;"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>9th</h3>
-            <p>HackRush (IITGN)</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="350">
-          <div class="achievement-icon">
-            <i class="bi bi-code-slash"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>2626</h3>
-            <p>Google Kickstart Rank</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="achievement-icon">
-            <i class="bi bi-patch-check"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>20+</h3>
-            <p>GCP Skill Badges</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="450">
-          <div class="achievement-icon">
-            <i class="bi bi-mic"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>11</h3>
-            <p>Sessions as Speaker</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="achievement-icon">
-            <i class="bi bi-percent"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>95.16</h3>
-            <p>CAT Percentile</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="550">
-          <div class="achievement-icon">
-            <i class="bi bi-award"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>100+</h3>
-            <p>Certificates</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="achievement-icon">
-            <i class="bi bi-calendar-event"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>34</h3>
-            <p>Events Managed</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="650">
-          <div class="achievement-icon">
-            <i class="bi bi-people"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>3600</h3>
-            <p>LinkedIn Followers</p>
-          </div>
-        </div>
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="700">
-          <div class="achievement-icon">
-            <i class="bi bi-diagram-3"></i>
-          </div>
-          <div class="achievement-content">
-            <h3>1674</h3>
-            <p>GeeksforGeeks (Rank #1)</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificates Section -->
-      <div class="certificates-section">
-        <h4 class="section-subtitle">Certificates & Learning</h4>
-        <div class="certificates-grid">
-          <div class="certificate-item" data-aos="fade-up">
-            <div class="certificate-icon">
-              <i class="bi bi-mortarboard-fill"></i>
-            </div>
-            <div class="certificate-content">
-              <h3>6</h3>
-              <p>Coursera Specializations</p>
-            </div>
-          </div>
-          <div class="certificate-item" data-aos="fade-up" data-aos-delay="50">
-            <div class="certificate-icon">
-              <i class="bi bi-laptop-fill"></i>
-            </div>
-            <div class="certificate-content">
-              <h3>42</h3>
-              <p>Udemy Courses</p>
-            </div>
-          </div>
-          <div class="certificate-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="certificate-icon">
-              <i class="bi bi-trophy-fill"></i>
-            </div>
-            <div class="certificate-content">
-              <h3>17</h3>
-              <p>Hackathons & Competitions</p>
-            </div>
-          </div>
-          <div class="certificate-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="certificate-icon">
-              <i class="bi bi-briefcase-fill"></i>
-            </div>
-            <div class="certificate-content">
-              <h3>4</h3>
-              <p>Internship Certificates</p>
-            </div>
-          </div>
-          <div class="certificate-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="certificate-icon">
-              <i class="bi bi-book-fill"></i>
-            </div>
-            <div class="certificate-content">
-              <h3>16</h3>
-              <p>Other Courses</p>
-            </div>
-          </div>
-        </div>
-        <div class="certificates-link">
-          <a href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" class="btn-certificates">
-            <i class="bi bi-folder-fill"></i> View All Certificates
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Leadership Section ======= -->
-  <section id="leadership" class="leadership section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">02</span>
-        <h2>Leadership & Roles</h2>
-        <p>Leading teams and communities</p>
-      </div>
-
-      <div class="leadership-grid">
-        <div class="leadership-card" data-aos="fade-up">
-          <div class="leadership-icon">
-            <i class="bi bi-people-fill"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>GDSC Lead</h3>
-            <h4>Google Developer Students Club</h4>
-            <span class="leadership-date">May 2021 - July 2022</span>
-            <p>Google Developer Students Club Lead at GEC Rajkot. Managed 25+ events as lead and core member, fostering tech community growth.</p>
-            <a href="https://www.linkedin.com/company/dscgecr" target="_blank" class="leadership-link">View Community <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="leadership-icon">
-            <i class="bi bi-code-square"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>CodeChef Event Lead</h3>
-            <h4>GEC Rajkot Chapter</h4>
-            <span class="leadership-date">May 2020 - June 2021</span>
-            <p>Event Lead at CodeChef GEC Rajkot chapter. Managed & conducted 9 events on competitive programming, helping students improve their coding skills.</p>
-            <a href="https://www.linkedin.com/in/codechef-gec-rajkot-chapter-3953a31bb/" target="_blank" class="leadership-link">View Chapter <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="leadership-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="leadership-icon">
-            <i class="bi bi-mic-fill"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>Chief Organizing Officer</h3>
-            <h4>Inspire Talks</h4>
-            <span class="leadership-date">March 2021 - March 2022</span>
-            <p>Served as COO for startup named Inspire Talks, which provides platform to people to share their success stories. Organized multiple events and sessions.</p>
-            <a href="https://www.youtube.com/c/InspireTalksOriginal" target="_blank" class="leadership-link">View Channel <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="leadership-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="leadership-icon">
-            <i class="bi bi-cloud-fill"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>Google Cloud Facilitator</h3>
-            <h4>30 Days of Google Cloud</h4>
-            <span class="leadership-date">October 2021</span>
-            <p>Helped 400+ students across India to complete 30 days of Google Cloud challenge. Provided guidance and support throughout the program.</p>
-            <a href="https://www.linkedin.com/posts/harshil-kaneria-3a498918b_campus-facilitator-activity-6861542443800772609-3zwe?utm_source=share&utm_medium=member_desktop&rcm=ACoAACzRIuwBRxNBZppCrEH0P9S4AmcIyJjh05s" target="_blank" class="leadership-link">View Post <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="leadership-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="leadership-icon">
-            <i class="bi bi-newspaper"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>Newsletter Designer</h3>
-            <h4>Department Newsletter</h4>
-            <span class="leadership-date">March 2020 - March 2021</span>
-            <p>Designed and published 6 bi-monthly newsletters for our department, showcasing achievements, events, and updates.</p>
-            <a href="https://drive.google.com/drive/folders/1kwZXqW4BrVt08NeaeQGdVle9l65PeqGr?usp=sharing" target="_blank" class="leadership-link">View Newsletters <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="leadership-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="leadership-icon">
-            <i class="bi bi-globe"></i>
-          </div>
-          <div class="leadership-content">
-            <h3>Lumos Wizard</h3>
-            <h4>Lumos Metaverse</h4>
-            <span class="leadership-date">June 2022 - August 2022</span>
-            <p>The Lumos Metaverse is a world built for developers, designed to open access to ecosystem opportunities and help them with their journey into Web3.</p>
-            <a href="https://www.linkedin.com/posts/harshil-kaneria-3a498918b_connections-learning-lumoslabs-activity-6945387500852891650-NJfV?utm_source=share&utm_medium=member_desktop&rcm=ACoAACzRIuwBRxNBZppCrEH0P9S4AmcIyJjh05s" target="_blank" class="leadership-link">View Post <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Skills Section ======= -->
-  <section id="skills" class="skills section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">03</span>
-        <h2>Skills & Expertise</h2>
-        <p>Technologies I work with</p>
-      </div>
-
-      <div class="skills-categories">
-        <div class="skill-category">
-          <h3><i class="bi bi-cpu"></i> Core Technical</h3>
-          <div class="tech-stack">
-            <div class="tech-item">
-              <i class="bi bi-robot"></i>
-              <span>Agentic AI</span>
-            </div>
-            <div class="tech-item">
-              <i class="bi bi-diagram-3-fill"></i>
-              <span>Multi-Agent Systems</span>
-            </div>
-            <div class="tech-item">
-              <i class="bi bi-diagram-3"></i>
-              <span>System Design</span>
-            </div>
-            <div class="tech-item">
-              <i class="bi bi-diagram-3"></i>
-              <span>Microservices</span>
-            </div>
-            <div class="tech-item">
-              <i class="bi bi-cloud-arrow-down"></i>
-              <span>RESTful API Development</span>
-            </div>
-            <div class="tech-item">
-              <i class="bi bi-braces"></i>
-              <span>Data Structures &amp; Algorithms</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-code-slash"></i> Programming Languages</h3>
-          <div class="skill-bars">
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>Python</span>
-                <span class="skill-percent">95%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="95" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>JavaScript (ES6+)</span>
-                <span class="skill-percent">85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-bar-item">
-              <div class="skill-info">
-                <span>TypeScript</span>
-                <span class="skill-percent">80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="80" style="width: 0%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-robot"></i> AI/ML & LLM</h3>
-          <div class="skill-grid">
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-diagram-3"></i>
-                  <span>LangChain</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>RAG Pipelines</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-graph-up"></i>
-                  <span>LangGraph</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Multi-Agent Systems</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <div class="openai-logo">GPT</div>
-                  <span>OpenAI</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Fine-tuning, GPT</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <div class="vector-db-logo">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
-                      <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                      <circle cx="12" cy="12" r="3" fill="var(--bg-primary)"/>
-                    </svg>
-                  </div>
-                  <span>Vector DBs</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>ChromaDB, Pinecone, FAISS, pgVector</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-cpu-fill"></i>
-                  <span>TensorFlow</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Deep Learning</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-lightning-charge"></i>
-                  <span>PyTorch</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Neural Networks</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-bullseye"></i>
-                  <span>scikit-learn</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Machine Learning</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-camera"></i>
-                  <span>OpenCV</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Computer Vision</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-eye"></i>
-                  <span>Google Vision</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Vision API</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-chat-dots"></i>
-                  <span>Claude</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Anthropic AI</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-mic"></i>
-                  <span>Whisper</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>Speech Recognition</p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-card-3d">
-              <div class="skill-card-inner">
-                <div class="skill-card-front">
-                  <i class="bi bi-link-45deg"></i>
-                  <span>LangSmith</span>
-                </div>
-                <div class="skill-card-back">
-                  <p>LLM Monitoring</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-stack"></i> Frameworks & Libraries</h3>
-          <div class="tech-stack">
-            <div class="tech-item">Django</div>
-            <div class="tech-item">FastAPI</div>
-            <div class="tech-item">Node.js</div>
-            <div class="tech-item">Express.js</div>
-            <div class="tech-item">NestJS</div>
-            <div class="tech-item">Fastify</div>
-            <div class="tech-item">Vue.js</div>
-            <div class="tech-item">Pandas</div>
-            <div class="tech-item">NumPy</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-database"></i> Databases</h3>
-          <div class="tech-stack">
-            <div class="tech-item">MySQL</div>
-            <div class="tech-item">PostgreSQL</div>
-            <div class="tech-item">MongoDB</div>
-            <div class="tech-item">DynamoDB</div>
-            <div class="tech-item">Redis</div>
-            <div class="tech-item">ChromaDB</div>
-            <div class="tech-item">FAISS</div>
-            <div class="tech-item">Pinecone</div>
-            <div class="tech-item">pgVector</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-plug"></i> APIs & Messaging</h3>
-          <div class="tech-stack">
-            <div class="tech-item">REST</div>
-            <div class="tech-item">GraphQL</div>
-            <div class="tech-item">Apache Kafka</div>
-            <div class="tech-item">RabbitMQ</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-cloud"></i> DevOps & Cloud</h3>
-          <div class="tech-stack">
-            <div class="tech-item">Docker</div>
-            <div class="tech-item">AWS (EC2, S3, Lambda)</div>
-            <div class="tech-item">NGINX</div>
-            <div class="tech-item">Load Balancing</div>
-            <div class="tech-item">Git</div>
-            <div class="tech-item">GitHub</div>
-            <div class="tech-item">CI/CD Pipelines</div>
-            <div class="tech-item">Render</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-shield-check"></i> Testing & Security</h3>
-          <div class="tech-stack">
-            <div class="tech-item">PyTest</div>
-            <div class="tech-item">Swagger</div>
-            <div class="tech-item">Postman</div>
-            <div class="tech-item">SonarQube</div>
-            <div class="tech-item">ZAP (OWASP)</div>
-            <div class="tech-item">OAuth2</div>
-            <div class="tech-item">JWT</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-bug"></i> Web Scraping & Automation</h3>
-          <div class="tech-stack">
-            <div class="tech-item">Scrapy</div>
-            <div class="tech-item">Playwright</div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="bi bi-people"></i> Collaboration & Tools</h3>
-          <div class="tech-stack">
-            <div class="tech-item">Jira</div>
-            <div class="tech-item">Confluence</div>
-            <div class="tech-item">Bitbucket</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Projects Section ======= -->
-  <section id="projects" class="projects section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">04</span>
-        <h2>Featured Projects</h2>
-        <p>AI-driven solutions and systems</p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1: Agentic Real-time Scraping -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Production</div>
-            <div class="project-placeholder">
-              <i class="bi bi-robot"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">LangGraph</span>
-              <span class="tag">Celery</span>
-              <span class="tag">Playwright</span>
-            </div>
-            <h3>Agentic Real-time Scraping System</h3>
-            <p>Built agentic real-time scraping and vendor comparison system using LangGraph, Celery, and Playwright across 10+ medicine e-commerce platforms, enabling near real-time pricing and availability insights.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-shop"></i> 10+ Platforms</span>
-              <span><i class="bi bi-lightning"></i> Real-time</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: RAG Document Q&A -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Production</div>
-            <div class="project-placeholder">
-              <i class="bi bi-file-text"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">LangChain</span>
-              <span class="tag">LLaMA</span>
-              <span class="tag">ChromaDB</span>
-              <span class="tag">OCR</span>
-            </div>
-            <h3>RAG-based Document Q&A Pipeline</h3>
-            <p>Developed RAG-based document Q&A pipeline using LangChain, LLaMA, ChromaDB, and OCR for 1,000+ documents, achieving 97% accuracy on scanned PDFs.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-file-earmark"></i> 1,000+ Docs</span>
-              <span><i class="bi bi-check-circle"></i> 97% Accuracy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: NLP Chart Generation -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Production</div>
-            <div class="project-placeholder">
-              <i class="bi bi-graph-up-arrow"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">OpenAI</span>
-              <span class="tag">Fine-tuning</span>
-              <span class="tag">NLP</span>
-            </div>
-            <h3>NLP-driven Chart Generation</h3>
-            <p>Created NLP-driven chart generation tool using fine-tuned OpenAI models, converting business queries into visual analytics with 90%+ accuracy and saving 50+ hours/month.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-graph-up"></i> 90%+ Accuracy</span>
-              <span><i class="bi bi-clock"></i> 50+ hrs/month saved</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Conversational AI Agents -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Production</div>
-            <div class="project-placeholder">
-              <i class="bi bi-chat-dots"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Zoom SDK</span>
-              <span class="tag">Twilio</span>
-              <span class="tag">Whisper</span>
-              <span class="tag">LLMs</span>
-            </div>
-            <h3>Conversational AI Agents</h3>
-            <p>Implemented conversational AI agents for Zoom and voice calls using Zoom SDK, Twilio, Whisper, and LLMs, improving action-item capture by 40% and call efficiency by 30%.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-arrow-up"></i> 40% Improvement</span>
-              <span><i class="bi bi-telephone"></i> Voice AI</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: AI Photo Culling System -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Personal</div>
-            <div class="project-placeholder">
-              <i class="bi bi-camera"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">OpenCV</span>
-              <span class="tag">DeepFace</span>
-              <span class="tag">Celery</span>
-            </div>
-            <h3>AI Photo Culling System</h3>
-            <p>Built a production-ready AI Photo Culling System with 72 ML features for photo grouping, quality, composition, pose, aesthetics, and cultural context. Optimized for CPU-only execution, achieving 2.7 images/sec with 98% accuracy.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-speedometer2"></i> 2.7 img/sec</span>
-              <span><i class="bi bi-check-circle"></i> 98% Accuracy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Air Quality Forecasting -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Research</div>
-            <div class="project-placeholder">
-              <i class="bi bi-cloud"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">GNN</span>
-              <span class="tag">RNN</span>
-            </div>
-            <h3>Air Quality Index Forecasting</h3>
-            <p>Implemented air quality index forecasting using seven different models. Optimized performance by combining parallel processing with a GNN and a prior RNN model.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-graph-up"></i> 7 Models</span>
-              <span><i class="bi bi-cpu"></i> Parallel Processing</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7: Park@Ease -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Personal</div>
-            <div class="project-placeholder">
-              <i class="bi bi-p-square"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Vue.js</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">MySQL</span>
-            </div>
-            <h3>Park@Ease</h3>
-            <p>Developed a parking management web application with vehicle owner identification, incorrect parking reporting, penalty issuance, and pre-booking features. Implemented an Admin panel for user and vehicle management.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-people"></i> Full Stack</span>
-              <span><i class="bi bi-shield-check"></i> Admin Panel</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 8: Multispectral Image Dehazing -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Hackathon</div>
-            <div class="project-placeholder">
-              <i class="bi bi-image"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">CNN</span>
-              <span class="tag">TensorFlow</span>
-              <span class="tag">PyTorch</span>
-            </div>
-            <h3>Multispectral Image Dehazing</h3>
-            <p>Processes multispectral images to remove haze and fog to get clear satellite images with multilayer convolutional networks and fusion of CNN outputs. Achieved 2nd rank at Smart India Hackathon (college level) and selected for next round.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-trophy"></i> 2nd Place</span>
-              <span><i class="bi bi-satellite"></i> Satellite Images</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 9: QR Code Generator & Barcode Scanner -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202/QR-Code-Generator" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Mobile App</div>
-            <div class="project-placeholder">
-              <i class="bi bi-qr-code-scan"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">Android</span>
-              <span class="tag">Java</span>
-              <span class="tag">Mobile</span>
-            </div>
-            <h3>QR Code Generator & Barcode Scanner</h3>
-            <p>Created two mobile applications with Android & Java. One generates QR codes for given text, beneficial for secure and quick data communication. The Barcode scanner application can scan any barcode and provide its original code and link if attached.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-phone"></i> Android</span>
-              <span><i class="bi bi-shield-lock"></i> Secure</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 10: Speech Language Recognisor -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">NLP</div>
-            <div class="project-placeholder">
-              <i class="bi bi-mic"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">NLP</span>
-              <span class="tag">Python</span>
-              <span class="tag">Speech Recognition</span>
-            </div>
-            <h3>Speech Language Recognisor</h3>
-            <p>Divided into three main steps: 1) Speech Input 2) Speech to Text conversion 3) Text Language Recognition. Can detect 20+ languages including national and international languages using Natural Language Processing and Google Speech Python Module.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-translate"></i> 20+ Languages</span>
-              <span><i class="bi bi-soundwave"></i> Speech-to-Text</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 11: G-Medicine -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Web App</div>
-            <div class="project-placeholder">
-              <i class="bi bi-capsule"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">React.js</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <h3>G-Medicine</h3>
-            <p>Website where users can log in/sign up and access suitable medicine according to gender, age filtration, and find nearest medical shop, hospital, doctor's contact, and location details.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-heart-pulse"></i> Healthcare</span>
-              <span><i class="bi bi-geo-alt"></i> Location-based</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 12: Spotify Clone -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Frontend</div>
-            <div class="project-placeholder">
-              <i class="bi bi-music-note-beamed"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <h3>Spotify Clone</h3>
-            <p>Created front-end of Spotify with vanilla HTML, CSS, and JavaScript to learn and practice web development fundamentals. Implemented responsive design and interactive UI components.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-code-slash"></i> Vanilla JS</span>
-              <span><i class="bi bi-palette"></i> UI/UX</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 13: Tic Tac Toe -->
-        <div class="project-card" data-aos="fade-up">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link" title="View Details"><i class="bi bi-eye"></i></a>
-                <a href="https://github.com/Harshil26202" class="project-link" title="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-badge">Game</div>
-            <div class="project-placeholder">
-              <i class="bi bi-grid-3x3"></i>
-            </div>
-          </div>
-          <div class="project-content">
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Game Logic</span>
-            </div>
-            <h3>Tic Tac Toe using C++</h3>
-            <p>Simple tic tac toe game created with C++ programming language. Uses multiple loops and conditions for each different 9 cells and a set of rules for match winners and draws.</p>
-            <div class="project-stats">
-              <span><i class="bi bi-controller"></i> Game</span>
-              <span><i class="bi bi-cpu"></i> C++</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Experience Section ======= -->
-  <section id="experience" class="experience section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">05</span>
-        <h2>Experience</h2>
-        <p>Professional journey</p>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item" data-aos="fade-up">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Solution Analyst</h3>
-              <span class="timeline-company">Argusoft India Ltd</span>
-              <span class="timeline-date">Jan 2023 – Present</span>
-            </div>
-            <p class="timeline-location">Gandhinagar, Gujarat</p>
-            <ul class="timeline-details">
-              <li>Built agentic real-time scraping and vendor comparison system using LangGraph, Celery, and Playwright across 10+ medicine e-commerce platforms</li>
-              <li>Developed RAG-based document Q&A pipeline using LangChain, LLaMA, ChromaDB, and OCR for 1,000+ documents, achieving 97% accuracy</li>
-              <li>Created NLP-driven chart generation tool using fine-tuned OpenAI models with 90%+ accuracy, saving 50+ hours/month</li>
-              <li>Implemented conversational AI agents for Zoom and voice calls, improving action-item capture by 40%</li>
-              <li>Designed scalable backend processing 10K+ records/day with Django, reducing latency by 35% and maintaining 99.9% uptime</li>
-              <li>Automated job scraping and AI-based proposal generation with Jira integration, increasing outreach by 5x</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>LangGraph</span>
-              <span>LangChain</span>
-              <span>Django</span>
-              <span>FastAPI</span>
-              <span>OpenAI</span>
-              <span>ChromaDB</span>
-              <span>AWS</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>SDE Intern</h3>
-              <span class="timeline-company">Maruti Techlabs</span>
-              <span class="timeline-date">May 2022 – July 2022</span>
-            </div>
-            <p class="timeline-location">Ahmedabad, Gujarat</p>
-            <ul class="timeline-details">
-              <li>Built automated dashboards and reports using DOMO and Tableau with FiveTran-backed MSSQL pipelines</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>DOMO</span>
-              <span>Tableau</span>
-              <span>MSSQL</span>
-              <span>FiveTran</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact section">
-    <div class="container">
-      <div class="section-title">
-        <span class="section-number">06</span>
-        <h2>Get In Touch</h2>
-        <p>Let's build something amazing together</p>
-      </div>
-
-      <div class="row contact-content">
-        <div class="col-lg-4">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-geo-alt-fill"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Location</h4>
-                <p>Rajkot, Gujarat, India - 360005</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-envelope-fill"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Email</h4>
-                <p><a href="mailto:harshilkaneriya26202@gmail.com">harshilkaneriya26202@gmail.com</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="contact-form-wrapper">
-            <form class="contact-form" id="contactForm">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn-submit">
-                  <span>Send Message</span>
-                  <i class="bi bi-send"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 Harshil Kaneria. Built with AI & ❤️</p>
-        <div class="footer-links">
-          <a href="https://github.com/Harshil26202" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://twitter.com/HarshilKaneria4" target="_blank"><i class="bi bi-twitter"></i></a>
-          <a href="https://leetcode.com/u/hkharshil10/" target="_blank" rel="noopener noreferrer"><i class="bi bi-braces"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Easter Egg Terminal -->
-  <div id="terminal-easter" class="terminal-easter">
-    <div class="terminal-header">
-      <div class="terminal-buttons">
-        <span class="btn-close"></span>
-        <span class="btn-minimize"></span>
-        <span class="btn-maximize"></span>
-      </div>
-      <span class="terminal-title">AI Terminal</span>
-    </div>
-    <div class="terminal-body">
-      <div class="terminal-output"></div>
-      <div class="terminal-input-line">
-        <span class="terminal-prompt">$</span>
-        <input type="text" class="terminal-input" autocomplete="off">
+  <div class="menu" id="menu" aria-label="Menu">
+    <nav class="menu-links">
+      <a href="#about"><span>01</span>About</a>
+      <a href="#work"><span>03</span>Work</a>
+      <a href="#research"><span>04</span>Research</a>
+      <a href="#skills"><span>05</span>Skills</a>
+      <a href="#experience"><span>06</span>Experience</a>
+      <a href="#recognition"><span>07</span>Recognition</a>
+      <a href="#leadership"><span>08</span>Leadership</a>
+      <a href="#contact"><span>09</span>Contact</a>
+    </nav>
+    <div class="menu-foot">
+      <a href="mailto:harshilkaneriya26202@gmail.com">harshilkaneriya26202@gmail.com</a>
+      <div class="menu-social">
+        <a href="https://github.com/Harshil26202" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/HarshilKaneria4" target="_blank" rel="noopener">X</a>
       </div>
     </div>
   </div>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <i class="bi bi-arrow-up-short"></i>
-  </button>
+  <main id="main">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="top">
+      <div class="hero-stage" id="robot-stage">
+        <canvas id="robot-canvas" aria-label="An interactive 3D robot. Click it to talk to Harshil's AI twin." role="img"></canvas>
+        <div class="stage-fallback" aria-hidden="true"></div>
+        <p class="robot-hint" id="robot-hint" aria-hidden="true">Hi, I'm Harshil's AI twin. Click me.</p>
+      </div>
 
-  <!-- Template Main JS File -->
+      <div class="container hero-inner">
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Available for AI engineering roles</p>
+        <h1 class="hero-title" data-split>Harshil<br>Kaneria</h1>
+        <p class="hero-lede">AI engineer who started in ML. 5+ years building models and agents that ship, and the evals that prove they work.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work" data-magnetic>View work <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+          <button class="btn btn-ghost" type="button" data-open-twin data-magnetic>Ask my AI twin</button>
+        </div>
+      </div>
+
+      <div class="container hero-foot">
+        <p>Rajkot, India · <time id="local-time">--:--</time> IST</p>
+        <p class="scroll-cue" aria-hidden="true"><span></span>Scroll</p>
+        <ul class="hero-social" aria-label="Profiles">
+          <li><a href="https://github.com/Harshil26202" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/HarshilKaneria4" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://leetcode.com/u/hkharshil10/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="bi bi-code-slash"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Multi-agent systems</span><i>✦</i><span>RAG &amp; GraphRAG</span><i>✦</i><span>LLM evals</span><i>✦</i><span>Voice agents</span><i>✦</i><span>Text-to-SQL</span><i>✦</i><span>Production backends</span><i>✦</i>
+        <span>Multi-agent systems</span><i>✦</i><span>RAG &amp; GraphRAG</span><i>✦</i><span>LLM evals</span><i>✦</i><span>Voice agents</span><i>✦</i><span>Text-to-SQL</span><i>✦</i><span>Production backends</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ======= 01 About ======= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>01</span>About</p>
+          <h2 class="sec-title" data-split>Started in ML. <span class="dim">Now shipping AI.</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <figure class="real reveal" id="real">
+            <div class="real-stage" data-cursor="Hello">
+              <div class="real-photo">
+                <picture>
+                  <source srcset="assets/img/harshil.webp" type="image/webp">
+                  <img src="assets/img/harshil.jpg" alt="Harshil Kaneria in a black zip polo, arms crossed, against a violet glow" width="900" height="1125" loading="lazy">
+                </picture>
+                <span class="real-box" aria-hidden="true"><i></i><i></i><i></i><i></i><b>harshil_kaneria · 0.99</b></span>
+                <span class="real-scan" aria-hidden="true"></span>
+              </div>
+            </div>
+            <figcaption><span class="real-dot" aria-hidden="true"></span>The real me. The robot up top is my AI twin.</figcaption>
+          </figure>
+
+          <div class="about-body">
+            <p class="lead reveal">
+              I'm an AI engineer who started in ML. My first serious work was graph-neural-network research at IIT Gandhinagar;
+              for the last 3+ years I've shipped AI to production at Argusoft: LangGraph agents that watch 10+ e-commerce platforms,
+              RAG over 1,000+ scanned documents, and voice agents that sit in Zoom calls and capture what was decided.
+            </p>
+            <p class="reveal">
+              Lately I'm obsessed with the part most demos skip: knowing when the model is wrong.
+              My hackathon work, <a class="text-link" href="#p-cascade" data-jump="p-cascade">Cascade</a> and
+              <a class="text-link" href="#p-nexus" data-jump="p-nexus">Nexus</a>, is built around falsifiers, deterministic checks,
+              and agents that abstain instead of guessing. On the side, I write expert-level evaluation tasks for frontier LLMs, and I keep returning to my research roots: <a class="text-link" href="#research">ML for weather, climate and air quality</a>.
+            </p>
+
+            <figure class="trace reveal" aria-label="An agent trace that summarises who Harshil is">
+              <div class="trace-head">
+                <code>agent.run(<span class="tok-str">"Who is Harshil?"</span>)</code>
+                <span class="trace-status" id="trace-status">idle</span>
+              </div>
+              <ol class="trace-body" id="trace-body">
+                <li data-kind="plan"><span class="k">plan</span><span class="v">3 sub-goals: role, proof of work, method</span></li>
+                <li data-kind="tool"><span class="k">tool</span><span class="v">linkedin → AI Engineer @ Argusoft · 5K+ followers</span></li>
+                <li data-kind="tool"><span class="k">tool</span><span class="v">github → 6 public agentic &amp; LLM systems</span></li>
+                <li data-kind="tool"><span class="k">tool</span><span class="v">research → GNN air-quality forecasting, IITGN</span></li>
+                <li data-kind="tool"><span class="k">tool</span><span class="v">production → 4 AI systems live at Argusoft</span></li>
+                <li data-kind="tool"><span class="k">tool</span><span class="v">hackathons → Nexus placed, Microsoft Build AI 2026</span></li>
+                <li data-kind="reject"><span class="k">reject</span><span class="v">“just another LangChain wrapper”</span></li>
+                <li data-kind="answer"><span class="k">answer</span><span class="v">Ships agents, and the evals that prove they work.</span></li>
+              </ol>
+              <figcaption class="trace-foot"><span><span id="trace-tokens">0</span> tokens</span><span><span id="trace-ms">0</span> ms</span><button type="button" class="trace-replay" id="trace-replay">Replay</button></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <dl class="stats">
+          <div class="reveal"><dt>Years in ML &amp; AI</dt><dd><span data-count="5">5</span>+</dd></div>
+          <div class="reveal"><dt>Google HashCode, regional</dt><dd><span data-count="1">1</span><sup>st</sup></dd></div>
+          <div class="reveal"><dt>Students guided on Google Cloud</dt><dd><span data-count="400">400</span>+</dd></div>
+          <div class="reveal"><dt>People following on LinkedIn</dt><dd><span data-count="5">5</span>K+</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ======= 02 Principles (pinned 3D) ======= -->
+    <section class="principles" id="principles">
+      <div class="pin">
+        <canvas class="cube-canvas" id="cube-canvas" aria-hidden="true"></canvas>
+        <div class="container pin-inner">
+          <p class="sec-label"><span>02</span>How I build</p>
+          <p class="pin-kicker">Every system starts as noise.<br><span class="dim">Evals turn it into structure.</span></p>
+          <ol class="steps" id="steps">
+            <li class="step is-on">
+              <span class="step-n">01</span>
+              <h3>Evals before vibes.</h3>
+              <p>Every system I ship gets a baseline to beat and a harness to prove it. If I can't measure it, it doesn't ship.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">02</span>
+              <h3>Abstain when unsure.</h3>
+              <p>A confident wrong answer at 3am is worse than “I don't know.” My agents are allowed to say it, and so is the AI twin on this site.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">03</span>
+              <h3>Humans approve actions.</h3>
+              <p>Agents propose; people decide. Anything with side effects sits behind an approval gate.</p>
+            </li>
+          </ol>
+          <div class="pin-progress" aria-hidden="true"><span>noise</span><i><b id="pin-bar"></b></i><span>structure</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 03 Work ======= -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>03</span>Work</p>
+          <h2 class="sec-title" data-split>Selected work, <span class="dim">measured.</span></h2>
+          <p class="sec-sub reveal">Every project ships with a number. Where the number isn't verified yet, I say so.</p>
+        </header>
+
+        <!-- Featured: Cascade -->
+        <article class="feature reveal" id="p-cascade" data-project data-name="Cascade" data-kicker="Hackathon · Open source · 2026"
+          data-desc="An on-call root-cause agent that separates cause from symptom, and knows when to say it doesn't know."
+          data-stack="OpenAI SDK · DuckDB · FastAPI · Next.js" data-gh="https://github.com/Harshil26202/cascade" data-detail="d-cascade">
+          <div class="feature-visual" aria-hidden="true">
+            <svg class="viz-cascade" viewBox="0 0 400 220">
+              <g class="edges">
+                <path d="M80 60 L120 120"/><path d="M160 60 L120 120"/><path d="M240 60 L200 120"/><path d="M320 60 L280 120"/>
+                <path d="M120 120 L200 180"/><path d="M200 120 L200 180"/><path d="M280 120 L200 180"/><path d="M120 120 L120 180"/><path d="M280 120 L300 180"/>
+                <path class="hot" d="M200 180 L200 120 L240 60"/><path class="hot" d="M200 180 L120 120 L160 60"/>
+              </g>
+              <g class="nodes">
+                <circle cx="80" cy="60" r="7"/><circle cx="160" cy="60" r="7"/><circle class="loud" cx="240" cy="60" r="9"/><circle cx="320" cy="60" r="7"/>
+                <circle cx="120" cy="120" r="7"/><circle cx="200" cy="120" r="7"/><circle cx="280" cy="120" r="7"/>
+                <circle cx="120" cy="180" r="7"/><circle class="root" cx="200" cy="180" r="9"/><circle cx="300" cy="180" r="7"/>
+              </g>
+              <circle class="ring" cx="240" cy="60" r="9"/>
+              <text x="256" y="44">loudest alert</text>
+              <text x="216" y="206">root cause · never alerts</text>
+            </svg>
+          </div>
+          <div class="feature-body">
+            <p class="feature-kicker"><span>01</span>Hackathon · Open source · 2026</p>
+            <h3 class="feature-title">Cascade</h3>
+            <p class="feature-desc">An on-call root-cause agent that separates cause from symptom, and knows when to say it doesn't know.</p>
+            <dl class="metrics">
+              <div><dt>Heuristic baseline, top-1</dt><dd>0.60</dd></div>
+              <div><dt>Single-prompt baseline</dt><dd>0.30</dd></div>
+              <div><dt>Hand-verified, incl. abstain</dt><dd>3/10</dd></div>
+            </dl>
+            <p class="feature-flow">Triage → Hypothesis → Falsifier → Deterministic checks → <span>Human gate</span></p>
+            <div class="feature-actions">
+              <button type="button" class="link-btn" data-open-detail>Read case study <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+              <a class="link-btn link-muted" href="https://github.com/Harshil26202/cascade" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+            </div>
+          </div>
+          <template id="d-cascade">
+            <h4>The bottleneck</h4>
+            <p>The loudest alert is almost never the broken service. Retries amplify load on the way up the call chain, so a service three hops downstream of the real cause screams loudest while the origin is merely slow. Teams fix the loudest symptom and the incident recurs.</p>
+            <h4>How it works</h4>
+            <ul>
+              <li>A deterministic simulator generates 10 incidents over a synthetic 12-service system. Each has a planted fault whose ground truth is held out from every tool an agent can call.</li>
+              <li>Fault effects propagate through each service's real timeout and retry policy, so retry-storm signatures fall out of the mechanics instead of being hand-authored.</li>
+              <li><strong>Triage</strong> narrows the blast radius, <strong>hypothesis</strong> proposes falsifiable claims, and the <strong>falsifier</strong> runs each falsification query against real telemetry.</li>
+              <li>Two deterministic checks with no model call: a <strong>precedence checker</strong> rejects causes that happen after their symptoms, and an <strong>evidence validator</strong> resolves every citation back to the fixtures.</li>
+              <li>Nothing is remediated automatically. Every fix waits behind an explicit human approval gate.</li>
+            </ul>
+            <h4>Results, honestly reported</h4>
+            <p>Both baselines are fully measured over all 10 incidents (deploy-correlation heuristic: 0.60 top-1; single prompt: 0.30). Cascade is hand-verified correct on 3 representative incidents: a standard case, a deep cascade where the culprit <em>never alerts</em>, and a case where it correctly abstains. The full 10-incident number is deliberately left out rather than filled in unverified.</p>
+            <p class="d-note">Incident Wall · live service topology · streaming triage · hypothesis board · approval gate · scoreboard</p>
+          </template>
+        </article>
+
+        <!-- Featured: Nexus -->
+        <article class="feature feature-flip reveal" id="p-nexus" data-project data-name="Nexus" data-kicker="Microsoft Build AI Hackathon 2026 · Placed"
+          data-desc="AI-native engineering intelligence: agents for CI/CD, adaptive quality gates, incident response and plain-English DevOps."
+          data-stack="GPT-4o · XGBoost · FastAPI · Next.js 14 · OpenTelemetry · Prometheus · Docker" data-gh="https://github.com/Harshil26202/nexus" data-detail="d-nexus">
+          <div class="feature-visual" aria-hidden="true">
+            <div class="viz-nexus">
+              <div class="tests" id="nexus-tests"></div>
+              <p><span class="sel-key"></span>selected by the model <span class="skip-key"></span>skipped</p>
+            </div>
+          </div>
+          <div class="feature-body">
+            <p class="feature-kicker"><span>02</span><i class="bi bi-trophy-fill" aria-hidden="true"></i> Microsoft Build AI Hackathon 2026 · Placed</p>
+            <h3 class="feature-title">Nexus</h3>
+            <p class="feature-desc">AI-native engineering intelligence: agents for CI/CD, adaptive quality gates, incident response and plain-English DevOps.</p>
+            <dl class="metrics">
+              <div><dt>Less CI time, demo data</dt><dd>67%</dd></div>
+              <div><dt>Risk score per diff</dt><dd>0–100</dd></div>
+              <div><dt>Postmortem draft</dt><dd>Auto</dd></div>
+            </dl>
+            <p class="feature-flow">Diff analyzer → Test selector → Quality gate → Deploy watch → <span>Incident agent</span></p>
+            <div class="feature-actions">
+              <button type="button" class="link-btn" data-open-detail>Read case study <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+              <a class="link-btn link-muted" href="https://github.com/Harshil26202/nexus" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a>
+            </div>
+          </div>
+          <template id="d-nexus">
+            <h4>The problem</h4>
+            <p>A pipeline runs 500 tests on every commit and 80% are irrelevant. Production broke last night and it took 3 hours to find the root cause. Quality gates are static thresholds that ignore context.</p>
+            <h4>What it does</h4>
+            <ul>
+              <li><strong>Semantic diff analyzer:</strong> GPT-4o reads the actual diff, maps blast radius and affected services, and assigns a 0–100 risk score with plain-English reasoning.</li>
+              <li><strong>Test intelligence:</strong> XGBoost plus LLM reasoning selects only the relevant subset, cutting CI time by 67% on the demo data.</li>
+              <li><strong>Adaptive quality gates:</strong> gates evaluated with context, e.g. “block if auth middleware is touched without a security-review label”.</li>
+              <li><strong>Incident intelligence:</strong> correlates metrics with git history, pinpoints the guilty commit, and drafts a Google SRE-style postmortem.</li>
+              <li><strong>Natural-language DevOps:</strong> ask “why did auth-service fail last night?” instead of spelunking dashboards.</li>
+              <li>Live WebSocket dashboard, Prometheus metrics, Grafana, OpenTelemetry tracing, Swagger docs.</li>
+            </ul>
+            <p class="d-note">Submitted to Microsoft Build AI Hackathon 2026 · Theme 6: AI-Powered Production Function · placed</p>
+          </template>
+        </article>
+
+        <!-- Production -->
+        <div class="prod">
+          <p class="sub-label reveal">In production at Argusoft <span>· client work, code is private</span></p>
+          <div class="prod-grid">
+            <article class="prod-card reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-rag" viewBox="0 0 320 200" aria-hidden="true"><g class="docs"><rect class="fs s" x="34" y="40" width="64" height="84" rx="7"/><rect class="fs s" x="26" y="48" width="64" height="84" rx="7"/><rect class="fs s" x="18" y="56" width="64" height="84" rx="7"/><path class="s" d="M28 74h44M28 84h38M28 104h44M28 114h32M28 124h40"/><rect class="chunk" x="24" y="89" width="52" height="11" rx="3"/></g><path class="s" d="M90 98h24"/><path class="s" d="M110 94l4 4-4 4"/><circle class="dot" cx="146" cy="70" r="3"/><circle class="dot" cx="186" cy="64" r="3"/><circle class="dot" cx="198" cy="98" r="3"/><circle class="dot" cx="140" cy="128" r="3"/><circle class="dot" cx="176" cy="136" r="3"/><circle class="dot" cx="206" cy="126" r="3"/><circle class="dot" cx="156" cy="92" r="3"/><circle class="dot" cx="190" cy="84" r="3"/><circle class="dot" cx="128" cy="98" r="3"/><circle class="dot" cx="168" cy="118" r="3"/><path class="beam" pathLength="100" d="M170 100 L156 92" style="--d:0"/><path class="beam" pathLength="100" d="M170 100 L190 84" style="--d:1"/><path class="beam" pathLength="100" d="M170 100 L168 118" style="--d:2"/><circle class="fa q" cx="170" cy="100" r="5.5"/><path class="s" d="M218 98h14"/><path class="s" d="M228 94l4 4-4 4"/><rect class="fs s" x="238" y="56" width="70" height="86" rx="9"/><path class="aline" pathLength="100" d="M248 74h48" style="--d:0"/><path class="aline" pathLength="100" d="M248 87h40" style="--d:1"/><path class="aline" pathLength="100" d="M248 100h46" style="--d:2"/><path class="aline" pathLength="100" d="M248 113h30" style="--d:3"/><rect class="fa" x="248" y="124" width="18" height="11" rx="3"/><text class="ti" x="257" y="132.5" text-anchor="middle">1</text><text class="t" x="18" y="178">1,000+ scanned PDFs</text><text class="t ta" x="308" y="178" text-anchor="end">97% accurate</text></svg></div>
+              <div class="prod-body">
+                <p class="prod-n">97%</p>
+                <div><h3>RAG document Q&amp;A</h3><p>Grounded answers with citations over 1,000+ scanned enterprise PDFs.</p><p class="prod-stack">LangChain · LLaMA · ChromaDB · OCR</p></div>
+              </div>
+            </article>
+            <article class="prod-card reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-scrape" viewBox="0 0 320 200" aria-hidden="true"><path class="s" d="M160 96 L160.0 30.0"/><path class="travel" pathLength="100" d="M160 96 L160.0 30.0" style="--d:0"/><path class="s" d="M160 96 L231.7 42.6"/><path class="travel" pathLength="100" d="M160 96 L231.7 42.6" style="--d:1"/><path class="s" d="M160 96 L276.0 75.6"/><path class="travel" pathLength="100" d="M160 96 L276.0 75.6" style="--d:2"/><path class="s" d="M160 96 L276.0 116.4"/><path class="travel" pathLength="100" d="M160 96 L276.0 116.4" style="--d:3"/><path class="s" d="M160 96 L231.7 149.4"/><path class="travel" pathLength="100" d="M160 96 L231.7 149.4" style="--d:4"/><path class="s" d="M160 96 L160.0 162.0"/><path class="travel" pathLength="100" d="M160 96 L160.0 162.0" style="--d:5"/><path class="s" d="M160 96 L88.3 149.4"/><path class="travel" pathLength="100" d="M160 96 L88.3 149.4" style="--d:6"/><path class="s" d="M160 96 L44.0 116.4"/><path class="travel" pathLength="100" d="M160 96 L44.0 116.4" style="--d:7"/><path class="s" d="M160 96 L44.0 75.6"/><path class="travel" pathLength="100" d="M160 96 L44.0 75.6" style="--d:8"/><path class="s" d="M160 96 L88.3 42.6"/><path class="travel" pathLength="100" d="M160 96 L88.3 42.6" style="--d:9"/><rect class="node" x="147.0" y="22.0" width="26" height="16" rx="4" style="--d:0"/><rect class="node" x="218.7" y="34.6" width="26" height="16" rx="4" style="--d:1"/><rect class="node" x="263.0" y="67.6" width="26" height="16" rx="4" style="--d:2"/><rect class="node" x="263.0" y="108.4" width="26" height="16" rx="4" style="--d:3"/><rect class="node" x="218.7" y="141.4" width="26" height="16" rx="4" style="--d:4"/><rect class="node" x="147.0" y="154.0" width="26" height="16" rx="4" style="--d:5"/><rect class="node" x="75.3" y="141.4" width="26" height="16" rx="4" style="--d:6"/><rect class="node" x="31.0" y="108.4" width="26" height="16" rx="4" style="--d:7"/><rect class="node" x="31.0" y="67.6" width="26" height="16" rx="4" style="--d:8"/><rect class="node" x="75.3" y="34.6" width="26" height="16" rx="4" style="--d:9"/><circle class="ring2" cx="160" cy="96" r="20"/><circle class="fa" cx="160" cy="96" r="20"/><text class="ti" x="160" y="99.5" text-anchor="middle">agent</text><text class="t" x="18" y="190">10+ platforms</text><text class="t ta" x="302" y="190" text-anchor="end">near real-time</text></svg></div>
+              <div class="prod-body">
+                <p class="prod-n">10+</p>
+                <div><h3>Agentic price scraping</h3><p>LangGraph agents compare medicine prices and availability across platforms in near real time.</p><p class="prod-stack">LangGraph · Celery · Playwright</p></div>
+              </div>
+            </article>
+            <article class="prod-card reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-chart" viewBox="0 0 320 200" aria-hidden="true"><rect class="fs s" x="34" y="18" width="252" height="32" rx="16"/><text class="t tq" x="54" y="38">› revenue by region, last quarter</text><rect class="caret" x="246" y="28" width="2" height="12"/><path class="s" d="M160 56v12"/><path class="s" d="M156 64l4 4 4-4"/><path class="s" d="M56 176h208"/><rect class="bar fsa" x="68" y="132" width="20" height="44" rx="3" style="--d:0"/><rect class="bar fsa" x="100" y="106" width="20" height="70" rx="3" style="--d:1"/><rect class="bar fsa" x="132" y="120" width="20" height="56" rx="3" style="--d:2"/><rect class="bar fa" x="164" y="80" width="20" height="96" rx="3" style="--d:3"/><rect class="bar fsa" x="196" y="98" width="20" height="78" rx="3" style="--d:4"/><rect class="bar fsa" x="228" y="114" width="20" height="62" rx="3" style="--d:5"/><text class="t" x="56" y="194">plain English in, chart out</text><text class="t ta" x="264" y="194" text-anchor="end">90%+</text></svg></div>
+              <div class="prod-body">
+                <p class="prod-n">90%+</p>
+                <div><h3>Natural language → charts</h3><p>Fine-tuned models turn business questions into charts, saving 50+ hours a month.</p><p class="prod-stack">OpenAI · Fine-tuning</p></div>
+              </div>
+            </article>
+            <article class="prod-card reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-voice" viewBox="0 0 320 200" aria-hidden="true"><rect class="eq fa" x="22.0" y="91.4" width="3.4" height="17.2" rx="1.7" style="--d:0"/><rect class="eq fa" x="28.4" y="71.9" width="3.4" height="56.2" rx="1.7" style="--d:1"/><rect class="eq fa" x="34.8" y="64.4" width="3.4" height="71.1" rx="1.7" style="--d:2"/><rect class="eq fa" x="41.2" y="81.5" width="3.4" height="36.9" rx="1.7" style="--d:3"/><rect class="eq fa" x="47.6" y="78.8" width="3.4" height="42.4" rx="1.7" style="--d:4"/><rect class="eq fa" x="54.0" y="65.8" width="3.4" height="68.5" rx="1.7" style="--d:5"/><rect class="eq fa" x="60.4" y="72.6" width="3.4" height="54.8" rx="1.7" style="--d:6"/><rect class="eq fa" x="66.8" y="90.0" width="3.4" height="19.9" rx="1.7" style="--d:7"/><rect class="eq fa" x="73.2" y="72.2" width="3.4" height="55.6" rx="1.7" style="--d:8"/><rect class="eq fa" x="79.6" y="65.6" width="3.4" height="68.8" rx="1.7" style="--d:9"/><rect class="eq fa" x="86.0" y="81.9" width="3.4" height="36.1" rx="1.7" style="--d:10"/><rect class="eq fa" x="92.4" y="80.7" width="3.4" height="38.7" rx="1.7" style="--d:11"/><rect class="eq fa" x="98.8" y="65.4" width="3.4" height="69.3" rx="1.7" style="--d:12"/><rect class="eq fa" x="105.2" y="69.1" width="3.4" height="61.9" rx="1.7" style="--d:13"/><rect class="eq fa" x="111.6" y="91.5" width="3.4" height="17.0" rx="1.7" style="--d:14"/><rect class="eq fa" x="118.0" y="71.0" width="3.4" height="58.0" rx="1.7" style="--d:15"/><rect class="eq fa" x="124.4" y="64.8" width="3.4" height="70.5" rx="1.7" style="--d:16"/><rect class="eq fa" x="130.8" y="77.9" width="3.4" height="44.1" rx="1.7" style="--d:17"/><rect class="eq fa" x="137.2" y="77.8" width="3.4" height="44.3" rx="1.7" style="--d:18"/><rect class="eq fa" x="143.6" y="65.4" width="3.4" height="69.1" rx="1.7" style="--d:19"/><rect class="eq fa" x="150.0" y="68.6" width="3.4" height="62.8" rx="1.7" style="--d:20"/><rect class="eq fa" x="156.4" y="91.5" width="3.4" height="17.1" rx="1.7" style="--d:21"/><rect class="fs s" x="176" y="40" width="128" height="120" rx="10"/><text class="t" x="190" y="60">action items</text><rect class="s" x="190" y="74" width="13" height="13" rx="3"/><path class="tick" pathLength="100" d="M192.5 80.5l3 3 6-6.5" style="--d:0"/><path class="s" d="M212 80.5h66"/><rect class="s" x="190" y="100" width="13" height="13" rx="3"/><path class="tick" pathLength="100" d="M192.5 106.5l3 3 6-6.5" style="--d:1"/><path class="s" d="M212 106.5h52"/><rect class="s" x="190" y="126" width="13" height="13" rx="3"/><path class="tick" pathLength="100" d="M192.5 132.5l3 3 6-6.5" style="--d:2"/><path class="s" d="M212 132.5h60"/><text class="t" x="22" y="180">Zoom + phone calls</text><text class="t ta" x="304" y="180" text-anchor="end">+40% captured</text></svg></div>
+              <div class="prod-body">
+                <p class="prod-n">+40%</p>
+                <div><h3>Voice agents</h3><p>Agents in Zoom meetings and phone calls capture action items, with calls 30% more efficient.</p><p class="prod-stack">Zoom SDK · Twilio · Whisper</p></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- More builds -->
+        <div class="index">
+          <p class="sub-label reveal">More builds</p>
+          <div class="build-grid">
+            <article class="build reveal" data-project data-name="IPL Coaching Simulator" data-kicker="GDG vibe coding · Open source" data-desc="Make live tactical calls during a ball-by-ball IPL simulation. An LLM grades each decision and ranks you on a national leaderboard." data-stack="OpenAI · FastAPI · React · WebSockets · Docker" data-gh="https://github.com/Harshil26202/gdg-vibe-coding" data-detail="d-ipl" tabindex="0" role="button">
+              <div class="viz" aria-hidden="true"><svg class="v-ipl" viewBox="0 0 320 200" aria-hidden="true"><ellipse class="s" cx="160" cy="100" rx="122" ry="80"/><ellipse class="s dash" cx="160" cy="100" rx="70" ry="46"/><rect class="fsa sa" x="154" y="84" width="12" height="32" rx="2"/><path class="ballpath" pathLength="100" d="M160 92 Q 210 40 262 62"/><circle class="fielder" cx="160" cy="30" r="4.5"/><circle class="fielder" cx="232" cy="52" r="4.5"/><circle class="fielder" cx="262" cy="100" r="4.5"/><circle class="fielder" cx="232" cy="150" r="4.5"/><circle class="fielder" cx="160" cy="170" r="4.5"/><circle class="fielder" cx="88" cy="150" r="4.5"/><circle class="fielder" cx="58" cy="100" r="4.5"/><circle class="fielder" cx="88" cy="52" r="4.5"/><circle class="fielder" cx="196" cy="76" r="4.5"/><circle class="mover fa" cx="124" cy="70" r="5.5"/><rect class="fa" x="232" y="10" width="78" height="22" rx="11"/><text class="ti" x="271" y="24.5" text-anchor="middle">grade · Elite</text><text class="t" x="10" y="196">drag a fielder, get graded</text></svg></div>
+              <div class="build-body">
+                <p class="build-kicker"><span>03</span>GDG vibe coding · Open source</p>
+                <h3>IPL Coaching Simulator</h3>
+                <p class="build-desc">An LLM grades your live tactical calls on three axes and ranks you on a leaderboard. 69 tests passing.</p>
+                <div class="build-foot"><span class="build-stack">OpenAI · FastAPI · React · WebSockets · Docker</span><span class="build-go">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div>
+              </div>
+              <template id="d-ipl">
+                <h4>The game</h4>
+                <p>At key moments (over changes, field setups, batting collapses) a decision window opens and you have seconds to make the call. OpenAI scores it, explains the tactics, and ranks you against every other coach watching the same match.</p>
+                <h4>Scoring (out of 100)</h4>
+                <ul>
+                  <li><strong>Captain alignment · 40</strong>: does your call match the expert captain's?</li>
+                  <li><strong>Historical merit · 40</strong>: is it backed by historical IPL data?</li>
+                  <li><strong>Tactical rules · 20</strong>: does it follow coaching principles?</li>
+                </ul>
+                <h4>Also inside</h4>
+                <ul>
+                  <li>Drag-and-drop field placement on an interactive oval, bowling changes, batting order, powerplay and DRS calls.</li>
+                  <li>Head-to-head challenge mode with an AI rival fallback after 30 seconds.</li>
+                  <li>Tactical replay room: change a past decision and see the counterfactual scored live.</li>
+                  <li>LLM commentary with optional text-to-speech, and a shareable coach report card.</li>
+                </ul>
+              </template>
+            </article>
+            <article class="build reveal" data-project data-name="Wearable anomaly detection" data-kicker="Explainable ML · Open source" data-desc="Streams simulated health data for many users concurrently and turns SHAP attributions into plain-language clinical alerts." data-stack="Isolation Forest · SHAP · asyncio · Python 3.12" data-gh="https://github.com/Harshil26202/Wearable-Data-Stream-Anomaly-Detection" data-detail="d-wear" tabindex="0" role="button">
+              <div class="viz" aria-hidden="true"><svg class="v-wear" viewBox="0 0 320 200" aria-hidden="true"><rect class="fsoft" x="194" y="14" width="30" height="96" rx="6"/><polyline class="ecg" pathLength="100" points="16,73.9 22,72.6 28,70.1 34,67.6 40,66.1 46,66.3 52,68.1 58,70.6 64,72.9 70,74.0 76,73.3 82,71.2 88,68.6 94,66.6 100,66.0 106,67.2 112,69.5 118,72.1 124,73.7 130,73.8 136,72.2 142,69.7 148,67.3 154,66.1 160,66.5 166,68.4 172,71.0 178,73.2 184,74.0 190,73.1 196,70.8 202,40.0 208,22.0 214,40.0 220,67.5 226,69.9 232,72.4 238,73.9 244,73.7 250,71.9 256,69.3 262,67.0 268,66.0 274,66.7 280,68.8 286,71.4 292,73.4 298,74.0 304,72.8"/><circle class="ping" cx="208" cy="22" r="5"/><circle class="fa" cx="208" cy="22" r="3.5"/><text class="t ta" x="230" y="26">anomaly</text><text class="t" x="16" y="132">heart rate</text><rect class="shap fa" x="94" y="124" width="150" height="9" rx="3" style="--d:0;opacity:1.0"/><text class="t" x="16" y="148">SpO₂</text><rect class="shap fa" x="94" y="140" width="92" height="9" rx="3" style="--d:1;opacity:0.8"/><text class="t" x="16" y="164">temperature</text><rect class="shap fa" x="94" y="156" width="58" height="9" rx="3" style="--d:2;opacity:0.6"/><text class="t" x="16" y="180">activity</text><rect class="shap fa" x="94" y="172" width="30" height="9" rx="3" style="--d:3;opacity:0.3999999999999999"/><text class="t" x="304" y="196" text-anchor="end">SHAP → plain-language alert</text></svg></div>
+              <div class="build-body">
+                <p class="build-kicker"><span>04</span>Explainable ML · Open source</p>
+                <h3>Wearable anomaly detection</h3>
+                <p class="build-desc">Isolation Forest over 13-d features per reading; SHAP attributions become alerts a person can act on.</p>
+                <div class="build-foot"><span class="build-stack">Isolation Forest · SHAP · asyncio · Python 3.12</span><span class="build-go">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></span></div>
+              </div>
+              <template id="d-wear">
+                <h4>Pipeline</h4>
+                <ul>
+                  <li>A Markov-chain activity model (rest → walk → run) with Gaussian noise around personalised baselines (age, gender, region, humidity).</li>
+                  <li>A 13-dimensional feature vector per observation: rolling stats, HR reserve %, SpO₂ drop, temperature deviation, context.</li>
+                  <li>An Isolation Forest fitted on 150 clean warm-up observations per user, then live inference on every new point.</li>
+                  <li>SHAP TreeExplainer attributes each anomaly score to features, and an insight engine translates that into warnings a person can act on.</li>
+                </ul>
+                <h4>Why unsupervised</h4>
+                <p>Real health streams rarely come with labelled anomalies. With context in the features, the model learns that a high heart rate is fine during a run but alarming at rest in a hot climate.</p>
+                <p class="d-note">Injected: HR spike at rest · SpO₂ drop · fever · bradycardia · combined stress · heat stroke</p>
+              </template>
+            </article>
+            <article class="build reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-graph" viewBox="0 0 320 200" aria-hidden="true"><rect class="fs s" x="14" y="20" width="126" height="30" rx="15"/><text class="t tq" x="28" y="39">top 5 customers?</text><path class="s" d="M50 104 L94 94 M50 104 L60 144 M94 94 L110 136 M60 144 L110 136"/><rect class="tbl" x="16" y="86" width="40" height="22" rx="5" style="--d:0"/><rect class="tbl" x="76" y="76" width="40" height="22" rx="5" style="--d:1"/><rect class="tbl" x="30" y="136" width="40" height="22" rx="5" style="--d:2"/><rect class="tbl" x="92" y="128" width="40" height="22" rx="5" style="--d:3"/><rect class="fs s" x="156" y="20" width="150" height="74" rx="9"/><text class="t code" x="168" y="40" style="--d:0"><tspan class="ta">SELECT</tspan> name, SUM(total)</text><text class="t code" x="168" y="55" style="--d:1"><tspan class="ta">FROM</tspan> orders JOIN users</text><text class="t code" x="168" y="70" style="--d:2"><tspan class="ta">GROUP BY</tspan> name LIMIT 5</text><rect class="fsa sa" x="156" y="102" width="86" height="20" rx="10"/><text class="t ta" x="199" y="115.5" text-anchor="middle">SELECT-only ✓</text><rect class="hbar fa" x="156" y="132" width="140" height="8" rx="3" style="--d:0;opacity:1.0"/><rect class="hbar fa" x="156" y="144" width="112" height="8" rx="3" style="--d:1;opacity:0.85"/><rect class="hbar fa" x="156" y="156" width="90" height="8" rx="3" style="--d:2;opacity:0.7"/><rect class="hbar fa" x="156" y="168" width="70" height="8" rx="3" style="--d:3;opacity:0.55"/><rect class="hbar fa" x="156" y="180" width="52" height="8" rx="3" style="--d:4;opacity:0.4"/></svg></div>
+              <div class="build-body">
+                <p class="build-kicker"><span>05</span>Text-to-SQL</p>
+                <h3>Graph Chatbot</h3>
+                <p class="build-desc">Ask any PostgreSQL database questions in plain English, with schema-aware prompting and a SELECT-only guardrail.</p>
+                <div class="build-foot"><span class="build-stack">FastAPI · asyncpg · Gemini · React</span><span class="build-tag">Private</span></div>
+              </div>
+            </article>
+            <article class="build reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-photo" viewBox="0 0 320 200" aria-hidden="true"><g class="thumb" style="--d:0"><rect class="fs frame" x="22" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M28 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="51" cy="34" r="3.5"/></g><g class="thumb keep" style="--d:1"><rect class="fs frame" x="70" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M76 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="99" cy="34" r="3.5"/><circle class="fa" cx="106" cy="26" r="6"/><path class="tickw" d="M103.2 26l2 2 3.8-4"/></g><g class="thumb" style="--d:2"><rect class="fs frame" x="118" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M124 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="147" cy="34" r="3.5"/></g><g class="thumb" style="--d:3"><rect class="fs frame" x="166" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M172 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="195" cy="34" r="3.5"/></g><g class="thumb keep" style="--d:4"><rect class="fs frame" x="214" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M220 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="243" cy="34" r="3.5"/><circle class="fa" cx="250" cy="26" r="6"/><path class="tickw" d="M247.2 26l2 2 3.8-4"/></g><g class="thumb" style="--d:5"><rect class="fs frame" x="262" y="22" width="40" height="40" rx="6"/><path class="mtn" d="M268 54l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="291" cy="34" r="3.5"/></g><g class="thumb" style="--d:6"><rect class="fs frame" x="22" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M28 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="51" cy="82" r="3.5"/></g><g class="thumb" style="--d:7"><rect class="fs frame" x="70" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M76 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="99" cy="82" r="3.5"/></g><g class="thumb keep" style="--d:8"><rect class="fs frame" x="118" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M124 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="147" cy="82" r="3.5"/><circle class="fa" cx="154" cy="74" r="6"/><path class="tickw" d="M151.2 74l2 2 3.8-4"/></g><g class="thumb keep" style="--d:9"><rect class="fs frame" x="166" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M172 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="195" cy="82" r="3.5"/><circle class="fa" cx="202" cy="74" r="6"/><path class="tickw" d="M199.2 74l2 2 3.8-4"/></g><g class="thumb" style="--d:10"><rect class="fs frame" x="214" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M220 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="243" cy="82" r="3.5"/></g><g class="thumb" style="--d:11"><rect class="fs frame" x="262" y="70" width="40" height="40" rx="6"/><path class="mtn" d="M268 102l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="291" cy="82" r="3.5"/></g><g class="thumb" style="--d:12"><rect class="fs frame" x="22" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M28 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="51" cy="130" r="3.5"/></g><g class="thumb" style="--d:13"><rect class="fs frame" x="70" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M76 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="99" cy="130" r="3.5"/></g><g class="thumb keep" style="--d:14"><rect class="fs frame" x="118" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M124 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="147" cy="130" r="3.5"/><circle class="fa" cx="154" cy="122" r="6"/><path class="tickw" d="M151.2 122l2 2 3.8-4"/></g><g class="thumb" style="--d:15"><rect class="fs frame" x="166" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M172 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="195" cy="130" r="3.5"/></g><g class="thumb keep" style="--d:16"><rect class="fs frame" x="214" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M220 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="243" cy="130" r="3.5"/><circle class="fa" cx="250" cy="122" r="6"/><path class="tickw" d="M247.2 122l2 2 3.8-4"/></g><g class="thumb" style="--d:17"><rect class="fs frame" x="262" y="118" width="40" height="40" rx="6"/><path class="mtn" d="M268 150l9-11 7 8 5-5 7 8z"/><circle class="sun" cx="291" cy="130" r="3.5"/></g><text class="t" x="22" y="190">72 ML features</text><text class="t ta" x="302" y="190" text-anchor="end">2.7 img/s on CPU · 98%</text></svg></div>
+              <div class="build-body">
+                <p class="build-kicker"><span>06</span>Computer vision</p>
+                <h3>AI photo culling + Captus</h3>
+                <p class="build-desc">72 ML features for quality, composition, pose and aesthetics at 2.7 img/s on CPU, plus a keyboard-first culling app.</p>
+                <div class="build-foot"><span class="build-stack">PyTorch · U²-Net · OpenCV · DeepFace</span><span class="build-tag">Private</span></div>
+              </div>
+            </article>
+            <article class="build reveal">
+              <div class="viz" aria-hidden="true"><svg class="v-dehaze" viewBox="0 0 320 200" aria-hidden="true"><defs><filter id="haze-f" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.1 -.05"/><feGaussianBlur stdDeviation="2.5"/></filter><clipPath id="tile-c"><rect x="60" y="20" width="200" height="160" rx="10"/></clipPath></defs><g clip-path="url(#tile-c)"><rect class="fs" x="60" y="20" width="200" height="160"/><rect class="field" x="62" y="22" width="35" height="35" rx="3" style="opacity:0.10"/><rect class="field" x="101" y="22" width="35" height="35" rx="3" style="opacity:0.26"/><rect class="field" x="140" y="22" width="35" height="35" rx="3" style="opacity:0.42"/><rect class="field" x="179" y="22" width="35" height="35" rx="3" style="opacity:0.18"/><rect class="field" x="218" y="22" width="35" height="35" rx="3" style="opacity:0.34"/><rect class="field" x="62" y="61" width="35" height="35" rx="3" style="opacity:0.34"/><rect class="field" x="101" y="61" width="35" height="35" rx="3" style="opacity:0.10"/><rect class="field" x="140" y="61" width="35" height="35" rx="3" style="opacity:0.26"/><rect class="field" x="179" y="61" width="35" height="35" rx="3" style="opacity:0.42"/><rect class="field" x="218" y="61" width="35" height="35" rx="3" style="opacity:0.18"/><rect class="field" x="62" y="100" width="35" height="35" rx="3" style="opacity:0.18"/><rect class="field" x="101" y="100" width="35" height="35" rx="3" style="opacity:0.34"/><rect class="field" x="140" y="100" width="35" height="35" rx="3" style="opacity:0.10"/><rect class="field" x="179" y="100" width="35" height="35" rx="3" style="opacity:0.26"/><rect class="field" x="218" y="100" width="35" height="35" rx="3" style="opacity:0.42"/><rect class="field" x="62" y="139" width="35" height="35" rx="3" style="opacity:0.42"/><rect class="field" x="101" y="139" width="35" height="35" rx="3" style="opacity:0.18"/><rect class="field" x="140" y="139" width="35" height="35" rx="3" style="opacity:0.34"/><rect class="field" x="179" y="139" width="35" height="35" rx="3" style="opacity:0.10"/><rect class="field" x="218" y="139" width="35" height="35" rx="3" style="opacity:0.26"/><path class="river" d="M60 140 C 110 120, 130 160, 180 120 S 240 60, 260 70"/><path class="s" d="M60 60 L260 100 M140 20 L120 180"/><g class="haze"><rect x="60" y="20" width="200" height="160" filter="url(#haze-f)"/></g></g><rect class="s" x="60" y="20" width="200" height="160" rx="10"/><g class="divider"><path class="sa" d="M60 14v172"/><circle class="fa" cx="60" cy="100" r="6"/></g><text class="t" x="16" y="104">clear</text><text class="t" x="304" y="104" text-anchor="end">hazy</text><text class="t ta" x="160" y="198" text-anchor="middle">fused CNN outputs</text></svg></div>
+              <div class="build-body">
+                <p class="build-kicker"><span>07</span>Smart India Hackathon · 2nd</p>
+                <h3>Satellite image dehazing</h3>
+                <p class="build-desc">Removes haze and fog from multispectral satellite images with multilayer CNNs and fused outputs.</p>
+                <div class="build-foot"><span class="build-stack">CNN · TensorFlow · PyTorch</span><span class="build-tag">SIH · 2nd</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <details class="archive reveal">
+          <summary><span>Earlier projects <span class="dim">· 8</span></span><i class="bi bi-plus-lg" aria-hidden="true"></i></summary>
+          <ul class="archive-list">
+            <li><span class="a-name">Park@Ease</span><span class="a-desc">Parking management with owner lookup, violation reports, penalties and pre-booking</span><span class="a-stack">Vue · Node · MySQL</span><a href="https://github.com/Harshil26202/parking-management-system" target="_blank" rel="noopener" aria-label="Park@Ease on GitHub"><i class="bi bi-github"></i></a></li>
+            <li><span class="a-name">Speech language recogniser</span><span class="a-desc">Speech → text → language ID across 20+ languages</span><span class="a-stack">Python · NLP</span><span></span></li>
+            <li><span class="a-name">Google HashCode 2022</span><span class="a-desc">Team solution for Google HashCode 2022</span><span class="a-stack">C++</span><a href="https://github.com/Harshil26202/HashCode2022" target="_blank" rel="noopener" aria-label="HashCode 2022 on GitHub"><i class="bi bi-github"></i></a></li>
+            <li><span class="a-name">Vehicle management system</span><span class="a-desc">Vehicle management web app</span><span class="a-stack">JavaScript · Node</span><a href="https://github.com/Harshil26202/vehicle-Management-System" target="_blank" rel="noopener" aria-label="Vehicle management system on GitHub"><i class="bi bi-github"></i></a></li>
+            <li><span class="a-name">G-Medicine</span><span class="a-desc">Medicine discovery filtered by age and gender, plus nearby pharmacies and doctors</span><span class="a-stack">React</span><span></span></li>
+            <li><span class="a-name">QR generator + barcode scanner</span><span class="a-desc">Two Android apps for quick, secure data exchange</span><span class="a-stack">Android · Java</span><a href="https://github.com/Harshil26202/QR-Code-Generator" target="_blank" rel="noopener" aria-label="QR Code Generator on GitHub"><i class="bi bi-github"></i></a></li>
+            <li><span class="a-name">Spotify clone</span><span class="a-desc">My first web project, built from scratch</span><span class="a-stack">HTML · CSS · JS</span><a href="https://github.com/Harshil26202/Spotify-Clone" target="_blank" rel="noopener" aria-label="Spotify clone on GitHub"><i class="bi bi-github"></i></a></li>
+            <li><span class="a-name">Tic-tac-toe</span><span class="a-desc">Where it started: game rules in loops and conditions</span><span class="a-stack">C++</span><a href="https://github.com/Harshil26202/Tic-Tac-Toe" target="_blank" rel="noopener" aria-label="Tic-tac-toe on GitHub"><i class="bi bi-github"></i></a></li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- ======= 04 Research ======= -->
+    <section class="section" id="research">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>04</span>Research</p>
+          <h2 class="sec-title" data-split>Graph neural networks <span class="dim">for the air we breathe.</span></h2>
+          <p class="sec-sub reveal">Spatiotemporal forecasting of PM2.5 at IIT Gandhinagar, under Prof. Nipun Batra with PhD mentor Zeel Patel. Where my head is today: ML for weather, climate and atmospheric modelling.</p>
+        </header>
+
+        <article class="paper reveal" id="p-research" data-project data-name="Graph Neural Network for Air Quality Index Forecasting" data-kicker="IIT Gandhinagar · Jan – May 2022"
+          data-desc="A spatiotemporal graph neural network that forecasts PM2.5 across 184 cities, with geography and wind transport built into the graph itself."
+          data-stack="Python · PyTorch · GNN · GRU · KnowAir dataset" data-gh="" data-detail="d-research">
+          <div class="viz paper-viz" aria-hidden="true"><svg class="v-research" viewBox="0 0 480 300" aria-hidden="true"><path class="contour" d="M0 40 C 120 20, 260 70, 480 34"/><path class="contour" d="M0 92 C 120 72, 260 122, 480 86"/><path class="contour" d="M0 144 C 120 124, 260 174, 480 138"/><path class="contour" d="M0 196 C 120 176, 260 226, 480 190"/><path class="contour" d="M0 248 C 120 228, 260 278, 480 242"/><path class="ridge" d="M170 6 L186 64 L174 126 L200 186 L188 244 L204 298"/><path class="peak" d="M180 69 l6 -10 6 10z"/><path class="peak" d="M168 131 l6 -10 6 10z"/><path class="peak" d="M194 191 l6 -10 6 10z"/><path class="peak" d="M182 249 l6 -10 6 10z"/><path class="blocked" d="M200.9 117.1 L135.4 98.7"/><path class="s" d="M77.9 254.4 L95.3 196.3"/><path class="wind" pathLength="100" d="M77.9 254.4 L95.3 196.3" style="--d:0"/><path class="s" d="M76.9 144.2 L95.3 196.3"/><path class="wind" pathLength="100" d="M76.9 144.2 L95.3 196.3" style="--d:1"/><path class="s" d="M95.3 196.3 L133.0 262.0"/><path class="wind" pathLength="100" d="M95.3 196.3 L133.0 262.0" style="--d:2"/><path class="s" d="M34.2 172.9 L95.3 196.3"/><path class="wind" pathLength="100" d="M34.2 172.9 L95.3 196.3" style="--d:3"/><path class="s" d="M51.4 214.4 L95.3 196.3"/><path class="wind" pathLength="100" d="M51.4 214.4 L95.3 196.3" style="--d:4"/><path class="s" d="M298.3 144.9 L373.0 153.0"/><path class="wind" pathLength="100" d="M298.3 144.9 L373.0 153.0" style="--d:5"/><path class="s" d="M242.2 85.6 L298.3 144.9"/><path class="wind" pathLength="100" d="M242.2 85.6 L298.3 144.9" style="--d:6"/><path class="s" d="M219.8 162.7 L298.3 144.9"/><path class="wind" pathLength="100" d="M219.8 162.7 L298.3 144.9" style="--d:7"/><path class="s" d="M274.9 206.1 L298.3 144.9"/><path class="wind" pathLength="100" d="M274.9 206.1 L298.3 144.9" style="--d:8"/><path class="s" d="M366.9 84.7 L373.0 153.0"/><path class="wind" pathLength="100" d="M366.9 84.7 L373.0 153.0" style="--d:9"/><path class="s" d="M373.0 153.0 L435.2 117.9"/><path class="wind" pathLength="100" d="M373.0 153.0 L435.2 117.9" style="--d:10"/><path class="s" d="M373.0 153.0 L439.3 172.1"/><path class="wind" pathLength="100" d="M373.0 153.0 L439.3 172.1" style="--d:11"/><path class="s" d="M242.2 85.6 L276.9 44.9"/><path class="wind" pathLength="100" d="M242.2 85.6 L276.9 44.9" style="--d:12"/><path class="s" d="M219.8 162.7 L242.2 85.6"/><path class="wind" pathLength="100" d="M219.8 162.7 L242.2 85.6" style="--d:13"/><path class="s" d="M200.9 117.1 L242.2 85.6"/><path class="wind" pathLength="100" d="M200.9 117.1 L242.2 85.6" style="--d:14"/><path class="s" d="M25.4 118.5 L76.9 144.2"/><path class="wind" pathLength="100" d="M25.4 118.5 L76.9 144.2" style="--d:15"/><path class="s" d="M25.4 118.5 L35.6 50.8"/><path class="wind" pathLength="100" d="M25.4 118.5 L35.6 50.8" style="--d:16"/><path class="s" d="M25.4 118.5 L34.2 172.9"/><path class="wind" pathLength="100" d="M25.4 118.5 L34.2 172.9" style="--d:17"/><path class="s" d="M25.4 118.5 L95.7 72.9"/><path class="wind" pathLength="100" d="M25.4 118.5 L95.7 72.9" style="--d:18"/><path class="s" d="M366.9 84.7 L435.2 117.9"/><path class="wind" pathLength="100" d="M366.9 84.7 L435.2 117.9" style="--d:19"/><path class="s" d="M366.9 84.7 L385.6 40.7"/><path class="wind" pathLength="100" d="M366.9 84.7 L385.6 40.7" style="--d:20"/><path class="s" d="M366.9 84.7 L433.6 52.0"/><path class="wind" pathLength="100" d="M366.9 84.7 L433.6 52.0" style="--d:21"/><path class="s" d="M124.5 38.3 L135.4 98.7"/><path class="wind" pathLength="100" d="M124.5 38.3 L135.4 98.7" style="--d:22"/><path class="s" d="M95.7 72.9 L124.5 38.3"/><path class="wind" pathLength="100" d="M95.7 72.9 L124.5 38.3" style="--d:23"/><path class="s" d="M435.2 117.9 L439.3 172.1"/><path class="wind" pathLength="100" d="M435.2 117.9 L439.3 172.1" style="--d:24"/><path class="s" d="M433.6 52.0 L435.2 117.9"/><path class="wind" pathLength="100" d="M433.6 52.0 L435.2 117.9" style="--d:25"/><path class="s" d="M77.9 254.4 L133.0 262.0"/><path class="wind" pathLength="100" d="M77.9 254.4 L133.0 262.0" style="--d:26"/><path class="s" d="M51.4 214.4 L77.9 254.4"/><path class="wind" pathLength="100" d="M51.4 214.4 L77.9 254.4" style="--d:27"/><path class="s" d="M219.8 162.7 L274.9 206.1"/><path class="wind" pathLength="100" d="M219.8 162.7 L274.9 206.1" style="--d:28"/><path class="s" d="M200.9 117.1 L219.8 162.7"/><path class="wind" pathLength="100" d="M200.9 117.1 L219.8 162.7" style="--d:29"/><path class="s" d="M274.9 206.1 L302.1 235.8"/><path class="wind" pathLength="100" d="M274.9 206.1 L302.1 235.8" style="--d:30"/><path class="s" d="M76.9 144.2 L135.4 98.7"/><path class="wind" pathLength="100" d="M76.9 144.2 L135.4 98.7" style="--d:31"/><path class="s" d="M34.2 172.9 L76.9 144.2"/><path class="wind" pathLength="100" d="M34.2 172.9 L76.9 144.2" style="--d:32"/><path class="s" d="M76.9 144.2 L95.7 72.9"/><path class="wind" pathLength="100" d="M76.9 144.2 L95.7 72.9" style="--d:33"/><path class="s" d="M51.4 214.4 L76.9 144.2"/><path class="wind" pathLength="100" d="M51.4 214.4 L76.9 144.2" style="--d:34"/><path class="s" d="M35.6 50.8 L95.7 72.9"/><path class="wind" pathLength="100" d="M35.6 50.8 L95.7 72.9" style="--d:35"/><path class="s" d="M385.6 40.7 L433.6 52.0"/><path class="wind" pathLength="100" d="M385.6 40.7 L433.6 52.0" style="--d:36"/><path class="s" d="M95.7 72.9 L135.4 98.7"/><path class="wind" pathLength="100" d="M95.7 72.9 L135.4 98.7" style="--d:37"/><path class="s" d="M34.2 172.9 L51.4 214.4"/><path class="wind" pathLength="100" d="M34.2 172.9 L51.4 214.4" style="--d:38"/><circle class="city" cx="95.3" cy="196.3" r="5.7" style="opacity:0.81"/><circle class="city" cx="298.3" cy="144.9" r="5.5" style="opacity:0.76"/><circle class="city" cx="373.0" cy="153.0" r="6.1" style="opacity:0.87"/><circle class="pm-ping" cx="242.2" cy="85.6" r="6.7" style="--d:3"/><circle class="city" cx="242.2" cy="85.6" r="6.7" style="opacity:0.98"/><circle class="city" cx="25.4" cy="118.5" r="4.9" style="opacity:0.66"/><circle class="city" cx="276.9" cy="44.9" r="6.0" style="opacity:0.85"/><circle class="city" cx="366.9" cy="84.7" r="5.5" style="opacity:0.77"/><circle class="city" cx="124.5" cy="38.3" r="5.6" style="opacity:0.79"/><circle class="city" cx="435.2" cy="117.9" r="4.3" style="opacity:0.54"/><circle class="pm-ping" cx="77.9" cy="254.4" r="6.3" style="--d:9"/><circle class="city" cx="77.9" cy="254.4" r="6.3" style="opacity:0.91"/><circle class="pm-ping" cx="219.8" cy="162.7" r="6.7" style="--d:10"/><circle class="city" cx="219.8" cy="162.7" r="6.7" style="opacity:0.99"/><circle class="city" cx="274.9" cy="206.1" r="5.1" style="opacity:0.69"/><circle class="city" cx="76.9" cy="144.2" r="5.0" style="opacity:0.67"/><circle class="pm-ping" cx="200.9" cy="117.1" r="6.8" style="--d:13"/><circle class="city" cx="200.9" cy="117.1" r="6.8" style="opacity:1.00"/><circle class="city" cx="35.6" cy="50.8" r="4.4" style="opacity:0.56"/><circle class="city" cx="439.3" cy="172.1" r="4.3" style="opacity:0.55"/><circle class="city" cx="385.6" cy="40.7" r="4.3" style="opacity:0.55"/><circle class="pm-ping" cx="135.4" cy="98.7" r="6.3" style="--d:17"/><circle class="city" cx="135.4" cy="98.7" r="6.3" style="opacity:0.91"/><circle class="city" cx="133.0" cy="262.0" r="6.2" style="opacity:0.88"/><circle class="city" cx="34.2" cy="172.9" r="5.3" style="opacity:0.73"/><circle class="city" cx="302.1" cy="235.8" r="5.8" style="opacity:0.82"/><circle class="city" cx="95.7" cy="72.9" r="4.2" style="opacity:0.52"/><circle class="city" cx="51.4" cy="214.4" r="5.8" style="opacity:0.83"/><circle class="city" cx="433.6" cy="52.0" r="5.3" style="opacity:0.73"/><rect class="fs s" x="326" y="194" width="140" height="92" rx="10"/><text class="t" x="338" y="212">PM2.5 · one city</text><path class="fsoft" d="M408 230 L424 226 L440 208 L456 212 L456 244 L440 236 L424 250 Z"/><polyline class="sa hist" pathLength="100" points="338,266 352,254 366,260 380,240 394,248 408,230"/><polyline class="sa fc" points="408,230 424,238 440,222 456,228"/><path class="s dash" d="M408 220v56"/><text class="t" x="24" y="22">KnowAir · city graph (sampled)</text><text class="t ta" x="214" y="150">1,200 m barrier</text><path class="sa" d="M24 286h52"/><path class="sa" d="M24 282v8M76 282v8"/><text class="t" x="84" y="289">300 km</text><path class="wind-key" d="M150 286h26"/><path class="sa" d="M172 282l4 4-4 4"/><text class="t" x="184" y="289">wind transport</text></svg></div>
+          <div class="paper-body">
+            <p class="paper-venue"><i class="bi bi-journal-text" aria-hidden="true"></i> Workshop on Climate Change and ML · IITGN @ Amalthea 2022</p>
+            <h3 class="paper-title">Graph Neural Network for Air Quality Index Forecasting</h3>
+            <p class="paper-desc">Forecasting PM2.5 across 184 cities in Central China from four years of 3-hourly data and 17 meteorological features, with geography and wind transport built into the graph itself.</p>
+            <dl class="metrics metrics-4">
+              <div><dt>Cities in the graph</dt><dd>184</dd></div>
+              <div><dt>Meteorological features</dt><dd>17</dd></div>
+              <div><dt>Architectures benchmarked</dt><dd>7</dd></div>
+              <div><dt>RMSE, PM2.5-GNN replication</dt><dd>~19.6</dd></div>
+            </dl>
+            <div class="feature-actions">
+              <button type="button" class="link-btn" data-open-detail>Read the research <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <template id="d-research">
+            <h4>The question</h4>
+            <p>Can a graph of cities, wired with real geography and wind transport, forecast PM2.5 better than models that treat each city alone? I built and benchmarked spatiotemporal models on the KnowAir dataset: 184 cities in Central China, 4 years at 3-hour resolution, 17 meteorological features.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Designed and evaluated <strong>seven architectures</strong>, from MLP, LSTM and GRU to GC-LSTM, nodesFCGRU and PM2.5-GNN, benchmarked with RMSE, MAE, CSI, POD and FAR.</li>
+              <li>Engineered a <strong>knowledge-enhanced adjacency matrix</strong>: a 300 km distance threshold, 1,200 m mountain-barrier constraints, and PM2.5 trend correlation coefficients to model pollutant transport.</li>
+              <li>Put <strong>domain knowledge into the edges</strong>: wind speed, advection coefficients and directional transport vectors between source and sink cities, so the graph stays physically interpretable.</li>
+              <li>Ran <strong>ablations</strong> on the correlation threshold, distance threshold and history length.</li>
+              <li><strong>Replicated and extended PM2.5-GNN</strong> (SIGSPATIAL '20) at a comparable RMSE of about 19.6, and validated its geographic-connectivity assumptions with correlation-based graph rewiring.</li>
+            </ul>
+            <h4>What I found</h4>
+            <ul>
+              <li>For short-range AQI forecasting, <strong>temporal dependencies dominate spatial ones</strong>.</li>
+              <li><strong>Boundary layer height and surface pressure</strong> were the two most predictive meteorological features (Random Forest importance), consistent with the PM2.5-GNN paper.</li>
+              <li>The ERA5-compatible features used (PBL height, K-index, wind components, humidity, precipitation, surface pressure) carry over directly to modern reanalysis-driven ML weather models.</li>
+            </ul>
+            <p class="d-note">Workshop on Climate Change and ML · IITGN @ Amalthea 2022 · Prof. Nipun Batra, PhD mentor Zeel Patel</p>
+          </template>
+        </article>
+
+        <div class="findings">
+          <div class="finding reveal"><span class="finding-n">01</span><h3>Temporal beats spatial.</h3><p>Ablations on distance threshold, correlation threshold and history length showed time matters more than space for short-range AQI forecasts.</p></div>
+          <div class="finding reveal"><span class="finding-n">02</span><h3>The boundary layer matters most.</h3><p>Boundary layer height and surface pressure were the two most predictive features, consistent with the PM2.5-GNN paper.</p></div>
+          <div class="finding reveal"><span class="finding-n">03</span><h3>Physics in the graph.</h3><p>300 km distance and 1,200 m mountain-barrier constraints, with wind speed, advection and transport direction on every edge.</p></div>
+        </div>
+        <p class="models reveal"><span>Benchmarked</span> MLP · LSTM · GRU · GC-LSTM · nodesFCGRU · PM2.5-GNN <span>on</span> RMSE · MAE · CSI · POD · FAR</p>
+      </div>
+    </section>
+
+    <!-- ======= 05 Skills ======= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>05</span>Skills</p>
+          <h2 class="sec-title" data-split>Tools, <span class="dim">by attention.</span></h2>
+          <p class="sec-sub reveal">Rows are tools, columns are things I've built. Brighter cells mean heavier use. Hover to inspect.</p>
+        </header>
+
+        <div class="attn reveal">
+          <div class="attn-scroll">
+            <table class="attn-table" id="attn-table">
+              <caption class="sr-only">Tools used per project, weighted 0 to 3</caption>
+            </table>
+          </div>
+          <div class="attn-foot">
+            <p class="attn-readout" id="attn-readout" aria-live="polite">Hover a cell. Weights are hand-labelled from each project's stack.</p>
+            <div class="attn-legend" aria-hidden="true">
+              <span><i style="--w:.34"></i>Used</span>
+              <span><i style="--w:.67"></i>Core</span>
+              <span><i style="--w:1"></i>Built around</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-list">
+          <div class="stack-row reveal"><h3>Agents &amp; LLMs</h3><p>LangGraph, LangChain, OpenAI, Claude, Gemini, LLaMA, Hugging Face, Groq, LangSmith, Whisper, fine-tuning</p></div>
+          <div class="stack-row reveal"><h3>Retrieval</h3><p>RAG, GraphRAG, text-to-SQL, pgVector, ChromaDB, Pinecone, FAISS, OCR pipelines</p></div>
+          <div class="stack-row reveal"><h3>Research &amp; forecasting</h3><p>Graph neural networks (GCN, GAT), GRU, spatiotemporal modelling, time-series forecasting, physics-informed neural networks, ERA5-style reanalysis features, Weights &amp; Biases</p></div>
+          <div class="stack-row reveal"><h3>Machine learning</h3><p>PyTorch, TensorFlow, scikit-learn, XGBoost, SHAP, OpenCV, DeepFace, Google Vision, GNNs</p></div>
+          <div class="stack-row reveal"><h3>Backend</h3><p>Python, FastAPI, Django, Flask, Node.js, NestJS, Express, Celery, asyncio, REST, GraphQL, WebSockets</p></div>
+          <div class="stack-row reveal"><h3>Data</h3><p>PostgreSQL, MySQL, MongoDB, DynamoDB, Redis, DuckDB, Kafka, RabbitMQ, Pandas, NumPy</p></div>
+          <div class="stack-row reveal"><h3>Infrastructure</h3><p>Docker, AWS (EC2, S3, Lambda), NGINX, CI/CD, OpenTelemetry, Prometheus, Grafana</p></div>
+          <div class="stack-row reveal"><h3>Frontend</h3><p>TypeScript, JavaScript, React, Next.js, Vue.js</p></div>
+          <div class="stack-row reveal"><h3>Quality &amp; tooling</h3><p>PyTest, Playwright, Scrapy, Swagger, Postman, SonarQube, OWASP ZAP, OAuth2, JWT, Git, Jira</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 06 Experience ======= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>06</span>Experience</p>
+          <h2 class="sec-title" data-split>The training run, <span class="dim">2019 to now.</span></h2>
+          <p class="sec-sub reveal">Each checkpoint moved the loss. Hover the curve or the log; they're linked.</p>
+        </header>
+
+        <div class="run reveal">
+          <div class="run-chart" id="run-chart" role="img" aria-label="Illustrative loss curve from 2019 to 2026 with checkpoints for each career milestone"></div>
+          <ol class="run-log" id="run-log">
+            <li data-t="2019.55"><time>2019</time><span>Started B.E. Computer Engineering at GEC Rajkot</span></li>
+            <li data-t="2020.38"><time>2020</time><span>Event Lead, CodeChef GEC Rajkot chapter</span></li>
+            <li data-t="2021.2"><time>2021</time><span>Chief Organizing Officer, Inspire Talks</span></li>
+            <li data-t="2021.38"><time>2021</time><span>Google Developer Student Clubs Lead</span></li>
+            <li data-t="2021.78"><time>2021</time><span>Google Cloud facilitator for 400+ students</span></li>
+            <li data-t="2022.05"><time>2022</time><span>GNN research at IIT Gandhinagar, 1 of 20,000+</span></li>
+            <li data-t="2022.38"><time>2022</time><span>Data Engineering Intern, Maruti Techlabs</span></li>
+            <li data-t="2023.02"><time>2023</time><span>Joined Argusoft, shipping LLM systems</span></li>
+            <li data-t="2023.4"><time>2023</time><span>Graduated with a CGPA of 9.26</span></li>
+            <li data-t="2026.4"><time>2026</time><span>Nexus placed at Microsoft Build AI Hackathon</span></li>
+            <li data-t="2026.66"><time>2026</time><span>Cascade, a root-cause agent that abstains</span></li>
+          </ol>
+        </div>
+
+        <div class="jobs">
+          <article class="job reveal">
+            <div class="job-side">
+              <p class="job-when">Jan 2023 — Present</p>
+              <p class="job-org">Argusoft India Ltd</p>
+              <p class="job-loc">Gandhinagar</p>
+            </div>
+            <div class="job-main">
+              <h3>AI Engineer <span class="dim">· Solution Analyst, ML &amp; AI Engineering</span></h3>
+              <ul>
+                <li>Built an agentic real-time scraping and vendor-comparison system (LangGraph, Celery, Playwright) across 10+ medicine e-commerce platforms.</li>
+                <li>Developed a RAG document Q&amp;A pipeline (LangChain, LLaMA, ChromaDB, OCR) over 1,000+ documents at 97% accuracy on scanned PDFs.</li>
+                <li>Created an NL-to-chart tool with fine-tuned OpenAI models: 90%+ accuracy, 50+ hours saved per month.</li>
+                <li>Shipped conversational agents for Zoom and voice calls (Zoom SDK, Twilio, Whisper): +40% action-item capture, +30% call efficiency.</li>
+                <li>Designed a scalable time-series data backend (Django and Flask microservices on AWS) handling 10K+ records a day, cutting inference latency 35% at 99.9% uptime.</li>
+                <li>Automated job scraping and AI-generated proposals with Jira integration, increasing outreach 5×.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-side">
+              <p class="job-when">Present</p>
+              <p class="job-org">Contract</p>
+              <p class="job-loc">Remote</p>
+            </div>
+            <div class="job-main">
+              <h3>AI Model Evaluation &amp; RLHF</h3>
+              <ul><li>Author expert-level evaluation tasks for frontier LLMs, used for model evaluation and RLHF.</li></ul>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-side">
+              <p class="job-when">May — Jul 2022</p>
+              <p class="job-org">Maruti Techlabs</p>
+              <p class="job-loc">Ahmedabad</p>
+            </div>
+            <div class="job-main">
+              <h3>Data Engineering Intern</h3>
+              <ul><li>Built automated dashboards and reports in DOMO and Tableau on FiveTran-backed MSSQL pipelines.</li></ul>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-side">
+              <p class="job-when">Jan — May 2022</p>
+              <p class="job-org">IIT Gandhinagar</p>
+              <p class="job-loc">Gandhinagar</p>
+            </div>
+            <div class="job-main">
+              <h3>Student Externship <span class="dim">· ML research</span></h3>
+              <ul><li>Research in ML for atmospheric systems under Prof. Nipun Batra and PhD mentor Zeel Patel: a spatiotemporal GNN for PM2.5 forecasting across 184 cities.</li><li>Selected from 20,000+ applicants. Presented at the Workshop on Climate Change and ML (Amalthea 2022). CGPA 7.43.</li></ul>
+            </div>
+          </article>
+          <article class="job reveal">
+            <div class="job-side">
+              <p class="job-when">2019 — 2023</p>
+              <p class="job-org">GEC Rajkot</p>
+              <p class="job-loc">Rajkot</p>
+            </div>
+            <div class="job-main">
+              <h3>B.E. Computer Engineering</h3>
+              <ul><li>Graduated with a CGPA of 9.26.</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 06 Recognition ======= -->
+    <section class="section" id="recognition">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>07</span>Recognition</p>
+          <h2 class="sec-title" data-split>Benchmarks <span class="dim">I've been scored on.</span></h2>
+        </header>
+
+        <div class="highlights">
+          <div class="hl reveal"><p class="hl-v"><span data-count="1">1</span><sup>st</sup></p><p class="hl-k">Google HashCode, regional · intl. rank 5,134</p></div>
+          <div class="hl reveal"><p class="hl-v hl-word">Placed</p><p class="hl-k">Microsoft Build AI Hackathon 2026</p></div>
+          <div class="hl reveal"><p class="hl-v"><span data-count="1810">1810</span></p><p class="hl-k">CodeChef rating, 4★</p></div>
+          <div class="hl reveal"><p class="hl-v"><span data-count="95.16" data-decimals="2">95.16</span></p><p class="hl-k">CAT 2022 percentile</p></div>
+        </div>
+
+        <div class="board reveal">
+          <table class="board-table">
+            <thead>
+              <tr><th scope="col">Benchmark</th><th scope="col">Score</th><th scope="col" class="col-bar"><span class="sr-only">Relative signal</span></th><th scope="col">Note</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Smart India Hackathon</td><td>2nd</td><td class="col-bar"><span class="bar" style="--v:.92"></span></td><td>College round, satellite dehazing</td></tr>
+              <tr><td>HackRush, IIT Gandhinagar</td><td>9th</td><td class="col-bar"><span class="bar" style="--v:.8"></span></td><td>IITGN hackathon</td></tr>
+              <tr><td>CodeChef January Long Challenge 2022</td><td>#99</td><td class="col-bar"><span class="bar" style="--v:.78"></span></td><td>International rank</td></tr>
+              <tr><td>LeetCode</td><td>1664</td><td class="col-bar"><span class="bar" style="--v:.72"></span></td><td>900+ problems solved</td></tr>
+              <tr><td>GeeksforGeeks</td><td>1674</td><td class="col-bar"><span class="bar" style="--v:.74"></span></td><td>Rank #1</td></tr>
+              <tr><td>GATE 2022</td><td>468</td><td class="col-bar"><span class="bar" style="--v:.66"></span></td><td>AIR 3933</td></tr>
+              <tr><td>Google Kickstart</td><td>2626</td><td class="col-bar"><span class="bar" style="--v:.6"></span></td><td>Global rank</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="certs">
+          <div class="certs-head reveal">
+            <h3>Certificates <span class="dim">· 100+</span></h3>
+            <a class="link-btn" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener">Browse the folder <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="cert-grid">
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:0">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-mortarboard" aria-hidden="true"></i></span><span class="cert-issuer">Coursera</span></span>
+                <span class="cert-n">6</span>
+                <span class="cert-type">Specialisations</span>
+                <span class="cert-desc">Multi-course specialisation tracks completed on Coursera.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:1">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-play-btn" aria-hidden="true"></i></span><span class="cert-issuer">Udemy</span></span>
+                <span class="cert-n">42</span>
+                <span class="cert-type">Courses</span>
+                <span class="cert-desc">Hands-on courses completed on Udemy.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:2">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-cloud" aria-hidden="true"></i></span><span class="cert-issuer">Google Cloud</span></span>
+                <span class="cert-n">20+</span>
+                <span class="cert-type">Skill badges</span>
+                <span class="cert-desc">Hands-on Google Cloud skill badges earned through labs.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:3">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-trophy" aria-hidden="true"></i></span><span class="cert-issuer">Hackathons</span></span>
+                <span class="cert-n">17</span>
+                <span class="cert-type">Competition certificates</span>
+                <span class="cert-desc">Certificates from hackathons and coding competitions.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:4">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-briefcase" aria-hidden="true"></i></span><span class="cert-issuer">Internships</span></span>
+                <span class="cert-n">4</span>
+                <span class="cert-type">Internship certificates</span>
+                <span class="cert-desc">Completion certificates from internships.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+            <a class="cert reveal" href="https://drive.google.com/drive/folders/1ag1CkXm6sMmajLvooDfFgjZAAOZ4wGiB?usp=sharing" target="_blank" rel="noopener" style="--d:5">
+              <span class="cert-face">
+                <span class="cert-top"><span class="cert-icon"><i class="bi bi-journal-bookmark" aria-hidden="true"></i></span><span class="cert-issuer">Other</span></span>
+                <span class="cert-n">16</span>
+                <span class="cert-type">Courses &amp; workshops</span>
+                <span class="cert-desc">Courses and workshops from other platforms.</span>
+                <span class="cert-foot">View certificates <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 07 Leadership ======= -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>08</span>Leadership</p>
+          <h2 class="sec-title" data-split>Before orchestrating agents, <span class="dim">I orchestrated people.</span></h2>
+          <p class="sec-sub reveal">34 events managed, 11 talks given, 5K+ people following along on LinkedIn.</p>
+        </header>
+
+        <div class="lead-grid">
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-people" aria-hidden="true"></i></span><span class="lead-when">2021 — 22</span></div>
+            <p class="lead-n">25+</p>
+            <p class="lead-unit">events led</p>
+            <h3>Google Developer Student Clubs Lead</h3>
+            <p class="lead-org">GEC Rajkot</p>
+            <p class="lead-desc">Led the campus Google developer community as lead and core member.</p>
+            <a class="lead-link" href="https://www.linkedin.com/company/dscgecr" target="_blank" rel="noopener">Community <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-cloud" aria-hidden="true"></i></span><span class="lead-when">2021</span></div>
+            <p class="lead-n">400+</p>
+            <p class="lead-unit">students guided</p>
+            <h3>Google Cloud Facilitator</h3>
+            <p class="lead-org">30 Days of Google Cloud</p>
+            <p class="lead-desc">Guided students across India through the Google Cloud learning programme.</p>
+            <a class="lead-link" href="https://www.linkedin.com/posts/harshil-kaneria-3a498918b_campus-facilitator-activity-6861542443800772609-3zwe" target="_blank" rel="noopener">Post <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span><span class="lead-when">2020 — 21</span></div>
+            <p class="lead-n">9</p>
+            <p class="lead-unit">events run</p>
+            <h3>CodeChef Event Lead</h3>
+            <p class="lead-org">GEC Rajkot chapter</p>
+            <p class="lead-desc">Ran competitive-programming contests and sessions for the chapter.</p>
+            <a class="lead-link" href="https://www.linkedin.com/in/codechef-gec-rajkot-chapter-3953a31bb/" target="_blank" rel="noopener">Chapter <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-mic" aria-hidden="true"></i></span><span class="lead-when">2021 — 22</span></div>
+            <p class="lead-n">COO</p>
+            <p class="lead-unit">startup</p>
+            <h3>Chief Organizing Officer</h3>
+            <p class="lead-org">Inspire Talks</p>
+            <p class="lead-desc">A startup giving people a stage to share their success stories.</p>
+            <a class="lead-link" href="https://www.youtube.com/c/InspireTalksOriginal" target="_blank" rel="noopener">Channel <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-megaphone" aria-hidden="true"></i></span><span class="lead-when">Ongoing</span></div>
+            <p class="lead-n">11</p>
+            <p class="lead-unit">talks given</p>
+            <h3>Speaker</h3>
+            <p class="lead-org">Campus &amp; community events</p>
+            <p class="lead-desc">Sessions as a speaker at campus and community tech events.</p>
+            <span class="lead-link lead-link-muted">On stage</span>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-newspaper" aria-hidden="true"></i></span><span class="lead-when">2020 — 21</span></div>
+            <p class="lead-n">6</p>
+            <p class="lead-unit">issues published</p>
+            <h3>Newsletter Designer</h3>
+            <p class="lead-org">Department newsletter</p>
+            <p class="lead-desc">Designed and published the department's bi-monthly newsletter.</p>
+            <a class="lead-link" href="https://drive.google.com/drive/folders/1kwZXqW4BrVt08NeaeQGdVle9l65PeqGr?usp=sharing" target="_blank" rel="noopener">Issues <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="lead-card reveal">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-globe2" aria-hidden="true"></i></span><span class="lead-when">2022</span></div>
+            <p class="lead-n">Web3</p>
+            <p class="lead-unit">community</p>
+            <h3>Lumos Wizard</h3>
+            <p class="lead-org">Lumos Metaverse</p>
+            <p class="lead-desc">A developer world opening access to ecosystem opportunities in Web3.</p>
+            <a class="lead-link" href="https://www.linkedin.com/posts/harshil-kaneria-3a498918b_connections-learning-lumoslabs-activity-6945387500852891650-NJfV" target="_blank" rel="noopener">Post <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <a class="lead-card lead-card-cta reveal" href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" target="_blank" rel="noopener">
+            <div class="lead-top"><span class="lead-icon"><i class="bi bi-linkedin" aria-hidden="true"></i></span><span class="lead-when">Now</span></div>
+            <p class="lead-n">5K+</p>
+            <p class="lead-unit">people following</p>
+            <h3>Writing about shipping AI</h3>
+            <p class="lead-desc">Follow along on LinkedIn.</p>
+            <span class="lead-link">Follow <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 08 Contact ======= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="sec-head">
+          <p class="sec-label"><span>09</span>Contact</p>
+          <h2 class="sec-title contact-title" data-split>Let's build something <span class="dim">that ships.</span></h2>
+        </header>
+
+        <button type="button" class="email-big reveal" id="copy-email" data-cursor="Copy">
+          <span>harshilkaneriya26202@gmail.com</span>
+          <span class="email-hint" id="copy-label"><i class="bi bi-copy" aria-hidden="true"></i> Copy</span>
+        </button>
+
+        <div class="contact-grid">
+          <form class="composer reveal" id="composer" novalidate>
+            <p class="composer-label">Or write it here. It opens your mail app with everything pre-filled.</p>
+            <div class="intents" role="radiogroup" aria-label="What is this about?">
+              <label><input type="radio" name="intent" value="Hiring" checked><span>Hiring</span></label>
+              <label><input type="radio" name="intent" value="Collaboration"><span>Collaboration</span></label>
+              <label><input type="radio" name="intent" value="Speaking"><span>Speaking</span></label>
+              <label><input type="radio" name="intent" value="Just saying hi"><span>Just saying hi</span></label>
+            </div>
+            <div class="field-row">
+              <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+              <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label class="field"><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+            <div class="composer-foot">
+              <span class="tok-count" id="tok-count">0 tokens</span>
+              <p class="form-error" id="form-error" role="alert"></p>
+              <button class="btn btn-primary" type="submit" data-magnetic>Send <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            </div>
+          </form>
+
+          <ul class="links reveal" aria-label="Elsewhere">
+            <li><a href="https://www.linkedin.com/in/harshil-kaneria-3a498918b/" target="_blank" rel="noopener"><span>LinkedIn</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Harshil26202" target="_blank" rel="noopener"><span>GitHub</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/HarshilKaneria4" target="_blank" rel="noopener"><span>X / Twitter</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+            <li><a href="https://leetcode.com/u/hkharshil10/" target="_blank" rel="noopener"><span>LeetCode</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+            <li><a href="https://drive.google.com/drive/folders/13eFBkf4dUJCc2UqfdoVkQ5FfCR2Wn5Eg?usp=sharing" target="_blank" rel="noopener"><span>Résumé</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-mark" aria-hidden="true">Harshil Kaneria</p>
+      <div class="footer-row">
+        <p>© <span id="year">2026</span> Harshil Kaneria</p>
+        <p class="dim">Hand-built with three.js. Inference in <span id="infer-time">–</span>s, every claim cited.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= AI twin (command palette) ======= -->
+  <dialog class="twin" id="twin" aria-labelledby="twin-title">
+    <div class="twin-shell">
+      <div class="twin-head">
+        <span class="nav-ask-dot" aria-hidden="true"></span>
+        <h2 class="sr-only" id="twin-title">Ask Harshil's AI twin</h2>
+        <form class="twin-form" id="twin-form" autocomplete="off">
+          <input class="twin-input" id="twin-input" type="text" placeholder="Ask anything about Harshil, or type / for commands" aria-label="Ask a question or type a command" spellcheck="false">
+        </form>
+        <button class="twin-close" type="button" id="twin-close" aria-label="Close"><kbd>esc</kbd></button>
+      </div>
+      <div class="twin-body" id="twin-body" aria-live="polite" data-lenis-prevent>
+        <div class="twin-intro" id="twin-intro">
+          <p class="twin-note">Retrieval runs in your browser over this page's content. No LLM call, nothing sent anywhere. If there's no evidence, I'll say so instead of guessing.</p>
+          <p class="twin-label">Try asking</p>
+          <div class="twin-suggest" id="twin-suggest">
+            <button type="button">What has he shipped to production?</button>
+            <button type="button">Tell me about Cascade</button>
+            <button type="button">What's his RAG stack?</button>
+            <button type="button">Is he open to new roles?</button>
+            <button type="button">Hackathon results?</button>
+            <button type="button">What's his favourite pizza?</button>
+          </div>
+          <p class="twin-label">Commands</p>
+          <ul class="twin-cmds" id="twin-cmds" role="listbox" aria-label="Commands"></ul>
+        </div>
+        <div class="twin-answer" id="twin-answer" hidden></div>
+      </div>
+      <div class="twin-foot">
+        <span><kbd>↵</kbd> ask</span><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>/</kbd> commands</span>
+        <span class="twin-meta" id="twin-meta">bm25 · 0 chunks</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ======= Project detail sheet ======= -->
+  <dialog class="detail" id="detail" aria-labelledby="detail-title">
+    <div class="detail-shell">
+      <header class="detail-head">
+        <div>
+          <p class="detail-kicker" id="detail-kicker"></p>
+          <h2 id="detail-title"></h2>
+        </div>
+        <button type="button" class="icon-btn" id="detail-close" aria-label="Close"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+      </header>
+      <div class="detail-body" id="detail-body" data-lenis-prevent></div>
+      <footer class="detail-foot" id="detail-foot"></footer>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/knowledge.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script type="module" src="assets/js/scene.js"></script>
 </body>
 
 </html>
